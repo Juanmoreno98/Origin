@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
-import { projectLoad } from "../../redux/actions";
+import { projectLoad } from "../../redux/actions.ts";
 
 function CardDetail() {
   const projects = useSelector(state => state.projects);

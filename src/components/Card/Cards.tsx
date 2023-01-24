@@ -2,9 +2,10 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
 
+
 function Card(props) {
   const navigate = useNavigate();
-  const projects=useSelector(state=>state.projects)
+  const projects=useSelector((state:any)=>state.projects)
   console.log(projects);
 const navigateDetail=(e)=>{
   navigate(`projects/${e}`)
