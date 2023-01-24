@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card/Cards.tsx';
-import CardDetail from '../CardDetail/CardDetail';
+import CardDetail from '../CardDetail/CardDetail.tsx';
 import Navbar from '../Navbar/Navbar';
 
 function Home() {

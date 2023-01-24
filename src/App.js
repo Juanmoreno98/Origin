@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import About from "./components/AboutUs/About.jsx";
-import CardDetail from "./components/CardDetail/CardDetail.jsx";
+import CardDetail from "./components/CardDetail/CardDetail.tsx";
 import ContactUs from "./components/ContactUs/ContactUs.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import Footer from "./components/Footer/Footer.tsx";
 import Home from "./components/Home/Home.jsx"
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Proyects from "./components/Proyects/Proyects.jsx";
