@@ -1,3 +1,4 @@
+import { PROJECTS } from "./actions";
 
 
 
@@ -22,6 +23,8 @@ const initialState = {
 
 const rootReducer = (state = initialState, { type, payload }) => {
   switch (type) {
+    case PROJECTS:
+return state
     default:
       return state;
   }
