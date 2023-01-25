@@ -12,8 +12,9 @@ function Footer() {
   return (
     <footer className="bodyFooter">
 <div className='iconsNavigateFooter'>
-
   <h4 className='followUs'>FOLLOW US
+  <br></br>
+  <br></br>
   <hr color="#777777"></hr>
 
   </h4>
@@ -43,6 +44,8 @@ www.twitter.com
 <div className='iconsNavigateFooter'>
 
   <h4 className='ContactUs'>CONTACTENOS
+  <br></br>
+  <br></br>
   <hr color="#777777"></hr>
 
   </h4>
@@ -82,9 +85,16 @@ www.twitter.com
     </div>
   </div>
 </div>
+<div>
+<h3 className='titleFooter'> Origin Holdings S.A.S
+<hr></hr></h3>
+
 <img className='imgLogo' src={logo} alt="" />
+</div>
+
+
       <div className='copyrigth'>
-      Copyright © {new Date().getFullYear()} Origin S.A.S
+      Copyright © {new Date().getFullYear()} Origin Holdings S.A.S
       </div>
 </footer>
     

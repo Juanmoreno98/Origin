@@ -1,17 +1,18 @@
 .bodyFooter {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 15rem;
   bottom: 0;
   top: -1;
-  background: rgb(28, 27, 27);
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 35%, rgba(91,91,91,1) 100%);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 
 }
 .copyrigth {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   height: 2rem;
   bottom: 0;
   top: -1;
@@ -37,18 +38,25 @@ body {
   display: flex;
 
 }
-
+.titleFooter{
+color: white;
+width: 190px;
+font-size: 17px;
+margin-top: 13px;
+}
 .imgLogo{
   width: 140px;
   border-radius: 50% ;
-  padding: 3rem;
-
+  /* padding: 3rem; */
+margin-left: 18px;
+margin-top: 10px;
 }
 
 .sliderFooter{
-  width: 140px;
+  width: 150px;
 
-  padding: 3rem;
+  /* padding: 3rem; */
+  
 }
 
 .followUs{
@@ -60,6 +68,7 @@ body {
   width: 280px;
   text-align: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 .footeremailIcon{
   color: aqua;
@@ -70,12 +79,12 @@ body {
 }
 
 .carousel-wrapper {
-  width: 260px;
-  height: 180px;
+  width: 275px;
+  height: 195px;
   overflow: hidden;
 padding: 8px;
   border-radius: 8px;
-  margin-top: 17px;
+  margin-top: 9px;
   margin-left: 15px;
   box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
 
