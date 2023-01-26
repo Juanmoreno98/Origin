@@ -5,7 +5,7 @@ import About from "./components/AboutUs/About.jsx";
 import CardDetail from "./components/CardDetail/CardDetail.jsx";
 import ContactUs from "./components/ContactUs/ContactUs.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-import Home from "./components/Home/Home.jsx"
+import Home from "./components/Home/Home.tsx"
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Proyects from "./components/Proyects/Proyects.jsx";
 
