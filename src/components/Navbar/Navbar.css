@@ -78,8 +78,8 @@ flex-direction: row;
   url("https://www.psdgraphics.com/wp-content/uploads/2020/02/glass-windows-building.jpg");
   background: linear-gradient(to right, hsla(212, 35%, 21%, 0.719), #285ab6),
   url("https://www.psdgraphics.com/wp-content/uploads/2020/02/glass-windows-building.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  max-height: 500px;
-  min-height: 200px;
+  max-height: 400px;
+  min-height: 180px;
 
   background-size: cover;
   background-repeat: no-repeat;

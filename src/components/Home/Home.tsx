@@ -13,17 +13,22 @@ import img7 from "../../img/obra 2.jpg"
 import img8 from "../../img/obra 3.jpg"
 import img9 from "../../img/obra.webp"
 import "./home.css"
+import video from "../../film/video prueba.mp4"
 
 
 function Home() {
   return (
     <div>
-      <Navbar></Navbar>  
+      <Navbar></Navbar> 
+      <div className='barra'>
+
+      </div>
+      <div className='initialPosition'>
 <div className='box'>
 
-    <section>
-    <div className="container">
-        <div className="carousel">
+    <div className='sectionHome'>
+    <div className="containerHome">
+        <div className="carouselHome">
             <input type="radio" name="slides" id="slide-1"/>
             <input type="radio" name="slides" id="slide-2"/>
             <input type="radio" name="slides" id="slide-3"/>
@@ -120,8 +125,15 @@ function Home() {
             </ul>
         </div>
     </div>
-</section>
 </div>
+</div>
+
+<div className='videoHome'>
+  <video width="200px" autoPlay muted playsInline controls >
+    <source src={video} type="video/mp4" />
+  </video>
+</div>
+        </div> 
 {/* ------------------------------------------------------------------------------------------------------------------->>>> */}
 <div className="content-wrapper">
   <div className="news-card">
@@ -206,8 +218,8 @@ function Home() {
 {/* ----------------------------------------------------------------------------------------------------------------------> */}
 
 <div className='position' >
-<div className="carousel-wrapper">
-  <div className="carousel-container">
+<div className="carousel-wrapperHome">
+  <div className="carousel-containerHome">
     <div className="carousel2">
       <div className="image-one"></div>
       <div className="image-two"></div>
@@ -215,8 +227,8 @@ function Home() {
     </div>
   </div>
 </div>
-<div className="carousel-wrapper">
-  <div className="carousel-container">
+<div className="carousel-wrapperHome">
+  <div className="carousel-containerHome">
     <div className="carousel2">
       <div className="image-one"></div>
       <div className="image-two"></div>
