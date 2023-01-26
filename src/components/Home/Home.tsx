@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from '../Card/Cards.tsx';
+import ContactUs from '../ContactUs/ContactUs.tsx';
+import Footer from '../Footer/Footer.tsx';
 import CardDetail from '../CardDetail/CardDetail';
 import Navbar from '../Navbar/Navbar';
 import img1 from "../../img/acabado piso.jpg"
@@ -11,14 +12,8 @@ import img6 from "../../img/materiales-construccion.jpg"
 import img7 from "../../img/obra 2.jpg"
 import img8 from "../../img/obra 3.jpg"
 import img9 from "../../img/obra.webp"
-
-
-
-
-
-
-
 import "./home.css"
+
 
 function Home() {
   return (
@@ -230,8 +225,10 @@ function Home() {
   </div>
 </div>
 </div>
-
+<Footer/>
+<ContactUs/>
 </div>
+
   );
 }
 

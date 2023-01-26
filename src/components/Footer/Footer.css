@@ -1,0 +1,203 @@
+.bodyFooter {
+  position: relative;
+  width: 100%;
+  height: 15rem;
+  bottom: 0;
+  top: -1;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 35%, rgba(91,91,91,1) 100%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+}
+.copyrigth {
+  position: fixed;
+  width: 100%;
+  height: 2rem;
+  bottom: 0;
+  top: -1;
+  background: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: start;
+  line-height: 30px;
+  font-size: 13px;
+}
+body {
+  margin-left: 0;
+}
+.iconsNavigateFooter {
+  color: white;
+  padding: 2rem;
+}
+.iconsFooter{
+  margin: 13px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+
+}
+.titleFooter{
+color: white;
+width: 190px;
+font-size: 17px;
+margin-top: 13px;
+}
+.imgLogo{
+  width: 140px;
+  border-radius: 50% ;
+  /* padding: 3rem; */
+margin-left: 18px;
+margin-top: 10px;
+}
+
+.sliderFooter{
+  width: 150px;
+
+  /* padding: 3rem; */
+  
+}
+
+.followUs{
+  width: 200px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ContactUs{
+  width: 280px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.footeremailIcon{
+  color: aqua;
+  padding: 1px;
+}
+.contactUsInfoLabel{
+  margin-left: 7px;
+}
+
+.carousel-wrapper {
+  width: 275px;
+  height: 195px;
+  overflow: hidden;
+padding: 8px;
+  border-radius: 8px;
+  margin-top: 9px;
+  margin-left: 15px;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+
+background: white;
+
+}
+.carousel-container {
+  width: 260px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.carousel {
+  display: flex;
+  width: 1200px;
+  animation: sliding 9s infinite;
+}
+.carousel div {
+  width: 420px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+.carousel:hover {
+  animation-play-state: paused;
+}
+.carousel .image-one {
+  background: url("../assets/origin2.jpg");
+  background-size: 17rem; 
+  background-repeat: no-repeat;  
+  object-fit: none;
+}
+.carousel .image-two {
+  background: url("../assets/imagen5.png");
+  background-size: 17rem; 
+  background-repeat: no-repeat;
+  object-fit: none;
+}
+.carousel .image-three {
+  background: url("../assets/imagen9.png");
+  background-size: 17rem; 
+  background-repeat: no-repeat;
+  object-fit: none;
+
+}
+/* .carousel .image-four {
+  background: url("../assets/originlogo.jpg");
+  background-size: 17rem; 
+  background-repeat: no-repeat;
+  object-fit: none;
+
+}
+.carousel .image-five {
+  background: url("../assets/origin2.jpg");
+  background-size: 17rem;    
+  background-repeat: no-repeat;
+  object-fit: none;
+
+} */
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-400px);
+  }
+  65% {
+    transform: translateX(-400px);
+  }
+  70% {
+    transform: translateX(-800px);
+  }
+  98% {
+    transform: translateX(-800px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-wrapper {
+    width: 312px;
+    height: 210px;
+  }
+  .carousel-container {
+    width: 240px;
+    height: 150px;
+  }
+  .carousel {
+    width: 720px;
+  }
+  .carousel > div {
+    width: 240px;
+    height: 150px;
+  }
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-400px);
+    }
+    65% {
+      transform: translateX(-400px);
+    }
+    70% {
+      transform: translateX(-800px);
+    }
+    98% {
+      transform: translateX(-800px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}

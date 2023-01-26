@@ -1,0 +1,720 @@
+/* .navbar{
+  background: rgb(68, 153, 239
+  ) ;
+  height: 9rem;
+  background-size: 100%;
+
+}
+body{
+  margin: 0;
+}
+.imgLogoHeader{
+  width: 120px;
+margin-top: 14px;
+
+margin-left: 16px;
+}
+
+.navLiks{
+  float: right;
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+display: flex;
+flex-direction: row;
+
+}
+
+.itemNav{
+  font-size: 2em;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0 0 150px;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} */
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
+
+:root {
+  --fondo: #f5f6fa;
+  --titulo: #c8d6e5;
+  --subtitulos: #ecf0f1;
+  --bordes: #192a56;
+  --fuente: "Montserrat";
+  --footer: #2f3640;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: var(--fuente);
+}
+
+/* ------------------------ HEADER--------------------------- */
+
+.header {
+  width: 100%;
+  height: 51%;
+  background: #141e30; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(hsla(212, 35%, 21%, 0.719)),
+      to(#141e30)
+    ),
+    url("https://www.psdgraphics.com/wp-content/uploads/2020/02/glass-windows-building.jpg");
+  background: -o-linear-gradient(left, hsla(212, 35%, 21%, 0.719), #2250a6),
+  url("https://www.psdgraphics.com/wp-content/uploads/2020/02/glass-windows-building.jpg");
+  background: linear-gradient(to right, hsla(212, 35%, 21%, 0.719), #285ab6),
+  url("https://www.psdgraphics.com/wp-content/uploads/2020/02/glass-windows-building.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-height: 500px;
+  min-height: 200px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  position: relative;
+}
+
+.contenedor {
+  width: 100%;
+  /* height: 100%; */
+}
+
+/* ------------------------Navegacion------------------------ */
+
+.navegacion {
+  width: 100%;
+  height: 50px;
+  max-height: 50px;
+  position: relative;
+  -webkit-animation-name: salida;
+  animation-name: salida;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.lista {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  right: -300px;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  transform: translateX(0px);
+  transition: transform 0.2s ease;
+}
+
+.lista-active {
+  transform: translateX(-300px);
+}
+
+.lista a {
+  margin-right: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: var(--titulo);
+  position: relative;
+}
+
+.lista a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  width: 0%;
+  background: var(--titulo);
+  display: block;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+}
+
+.lista a:hover::after {
+  width: 100%;
+}
+
+/* ---------------------------------TEXTOS--------------------------------- */
+
+.textos {
+  width: 100%;
+  height: 60%;
+  /* background: var(--fondo); */
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+
+
+  -webkit-animation-name: salida;
+
+  animation-name: salida;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.titulo {
+  font-size: 10px;
+  color: var(--titulo);
+  font-family: Maiandra GD;
+}
+
+.subtitulo {
+  font-size: 5px;
+  color: var(--subtitulos);
+}
+
+/* --------------------------------------WAVE-------------------------------------- */
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.wave2{
+  height: 100px; overflow: hidden
+}
+
+.svg{
+  height: 100%; width: 100%
+}
+
+.path{
+  stroke: none; fill: #ffffff
+}
+/* ---------------------------------TEXTO PRINCIPAL--------------------------------- */
+
+.main {
+  height: 35%;
+  width: 100%;
+  margin: auto;
+
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.parrafo-origin {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.parrafo-origin > p {
+  padding: 10px;
+  font-size: 20px;
+  text-align: justify;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+  -webkit-animation-name: salida;
+
+  animation-name: salida;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.logo {
+  width: 60%;
+  height: 100%;
+  margin-top: 50px;
+
+  -webkit-animation-name: salida;
+
+  animation-name: salida;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+/* -----------------------MENU MOVIL----------------------- */
+
+.menu-movil {
+  width: 25px;
+  height: 30px;
+  /* background: #000; */
+  position: absolute;
+  top: 18px;
+  right: 0;
+
+  cursor: pointer;
+  display: none;
+}
+
+.cel-inactive {
+  display: none;
+  color: var(--titulo);
+}
+/* --------------------------KEYFRAME-------------------------- */
+
+@-webkit-keyframes salida {
+  from {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes salida {
+  from {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+/* Media quieries */
+
+@media (max-width: 1300px) {
+  .logo {
+    height: 100%;
+    margin-top: 100px;
+  }
+
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .parrafo-origin {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    max-height: none;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .parrafo-origin {
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  .parrafo-origin > p {
+    padding: 0;
+  }
+
+  .logo {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px)
+{
+  .navegacion{
+    width: 830px;
+  }
+
+  .bodyFooter {
+    position: relative;
+    width: 100vw;
+    height: 35rem;
+    bottom: 0;
+    top: -1;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 35%, rgba(91,91,91,1) 100%);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  
+  }
+  .copyrigth {
+    position: fixed;
+    width: 100vw;
+    height: 1.5rem;
+    bottom: 0;
+    top: -1;
+    background: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: start;
+    line-height: 30px;
+    font-size: 13px;
+  }
+  body {
+    margin-left: 0;
+  }
+  .iconsNavigateFooter {
+    color: white;
+    padding: 2rem;
+  }
+  .iconsFooter{
+    margin: 13px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+  
+  }
+  .titleFooter{
+  color: white;
+  width: 190px;
+  font-size: 17px;
+  margin-top: 13px;
+  }
+  .imgLogo{
+    width: 140px;
+    border-radius: 50% ;
+    /* padding: 3rem; */
+  margin-left: 18px;
+  margin-top: 10px;
+  }
+  
+  .sliderFooter{
+    width: 150px;
+  
+    /* padding: 3rem; */
+    
+  }
+  
+  .followUs{
+    width: 100px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .ContactUs{
+    width: 110px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  .footeremailIcon{
+    color: aqua;
+    padding: 1px;
+  }
+  .contactUsInfoLabel{
+    margin-left: 7px;
+  }
+  
+  .carousel-wrapper {
+    width: 275px;
+    height: 195px;
+    overflow: hidden;
+  padding: 8px;
+    border-radius: 8px;
+    margin-top: 9px;
+    margin-left: 15px;
+    box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+  
+  background: white;
+  
+  }
+  .carousel-container {
+    width: 260px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .carousel {
+    display: flex;
+    width: 1200px;
+    animation: sliding 9s infinite;
+  }
+  .carousel div {
+    width: 420px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel:hover {
+    animation-play-state: paused;
+  }
+  .carousel .image-one {
+    background: url("../assets/origin2.jpg");
+    background-size: 17rem; 
+    background-repeat: no-repeat;  
+    object-fit: none;
+  }
+  .carousel .image-two {
+    background: url("../assets/imagen5.png");
+    background-size: 17rem; 
+    background-repeat: no-repeat;
+    object-fit: none;
+  }
+  .carousel .image-three {
+    background: url("../assets/imagen9.png");
+    background-size: 17rem; 
+    background-repeat: no-repeat;
+    object-fit: none;
+  
+  }
+  /* .carousel .image-four {
+    background: url("../assets/originlogo.jpg");
+    background-size: 17rem; 
+    background-repeat: no-repeat;
+    object-fit: none;
+  
+  }
+  .carousel .image-five {
+    background: url("../assets/origin2.jpg");
+    background-size: 17rem;    
+    background-repeat: no-repeat;
+    object-fit: none;
+  
+  } */
+  @keyframes sliding {
+    30% {
+      transform: translateX(0);
+    }
+    35% {
+      transform: translateX(-400px);
+    }
+    65% {
+      transform: translateX(-400px);
+    }
+    70% {
+      transform: translateX(-800px);
+    }
+    98% {
+      transform: translateX(-800px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .carousel-wrapper {
+      width: 312px;
+      height: 210px;
+    }
+    .carousel-container {
+      width: 240px;
+      height: 150px;
+    }
+    .carousel {
+      width: 720px;
+    }
+    .carousel > div {
+      width: 240px;
+      height: 150px;
+    }
+    @keyframes sliding {
+      30% {
+        transform: translateX(0);
+      }
+      35% {
+        transform: translateX(-400px);
+      }
+      65% {
+        transform: translateX(-400px);
+      }
+      70% {
+        transform: translateX(-800px);
+      }
+      98% {
+        transform: translateX(-800px);
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+  
+
+}
+
+@media (max-width: 575px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .titulo {
+    font-size: 18px;
+  }
+
+  .subtitulo {
+    font-size: 10px;
+  }
+
+  .parrafo-origin > p {
+    font-size: 13.3px;
+    font-weight: bold;
+  }
+  .parrafo-origin {
+    margin-top: 60px;
+  }
+
+  .logo img {
+    height: 150%;
+  }
+
+  .lista {
+    width: 35%;
+  }
+
+  .main {
+    height: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .lista {
+    width: 55%;
+  }
+
+  .textos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo {
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main {
+    height: 100px;
+  }
+}
+
+@media (max-width: 460px) {
+  .titulo {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .lista {
+    width: 55%;
+  }
+
+  .lista a {
+    padding: 0;
+  }
+
+  .logo img {
+    height: 150%;
+  }
+}
+
+@media (max-width: 325px) {
+  .navegacion {
+    display: none;
+  }
+
+  .menu-movil {
+    display: none;
+  }
+
+  .parrafo-origin {
+    display: none;
+  }
+
+  .parrafo-origin > p {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo img {
+    display: none;
+  }
+
+  html {
+    height: 200px;
+  }
+
+  .main {
+    display: none;
+  }
+
+  .subtitulo {
+    display: none;
+  }
+
+  .titulo {
+    display: none;
+  }
+
+  .cel-inactive {
+    display: block;
+  }
+}

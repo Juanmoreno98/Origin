@@ -1,3 +1,4 @@
+import { PROJECTS } from "./actions";
 
 
 
@@ -16,12 +17,38 @@ const initialState = {
       name:"Origin2",
       location:"Barranquilla",
       floors:9
+    },
+    {
+      id:3,
+      name:"Origin2",
+      location:"Barranquilla",
+      floors:9
+    },
+    {
+      id:4,
+      name:"Origin2",
+      location:"Barranquilla",
+      floors:9
+    },
+    {
+      id:5,
+      name:"Origin2",
+      location:"Barranquilla",
+      floors:9
+    },
+    {
+      id:6,
+      name:"Origin2",
+      location:"Barranquilla",
+      floors:9
     }
   ]
 };
 
 const rootReducer = (state = initialState, { type, payload }) => {
   switch (type) {
+    case PROJECTS:
+return state
     default:
       return state;
   }
