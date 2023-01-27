@@ -4,10 +4,34 @@
   height: 15rem;
   bottom: 0;
   top: -1;
-  background: rgb(0,0,0);
-  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 35%, rgba(91,91,91,1) 100%);
+  
+  /* background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(17,17,17,1) 35%, rgba(91,91,91,1) 100%); */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+
+
+
+  background: #141e30; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(hsla(212, 35%, 21%, 0.719)),
+      to(#141e30)
+    ),
+    url("https://wallup.net/wp-content/uploads/2019/09/14179-black-and-white-cityscapes-architecture-buildings-skyscrapers.jpg");
+  background: -o-linear-gradient(left, hsla(216, 16%, 6%, 0.719),  hsla(210, 26%, 14%, 0.719)),
+  url("https://wallup.net/wp-content/uploads/2019/09/14179-black-and-white-cityscapes-architecture-buildings-skyscrapers.jpg");
+  background: linear-gradient(to right, hsla(240, 8%, 3%, 0.719), hsla(210, 26%, 14%, 0.719) ),
+  url("https://wallup.net/wp-content/uploads/2019/09/14179-black-and-white-cityscapes-architecture-buildings-skyscrapers.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-height: 500px;
+  min-height: 200px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  position: relative;
 
 }
 .copyrigth {
@@ -16,9 +40,9 @@
   height: 2rem;
   bottom: 0;
   top: -1;
-  background: black;
+  background: rgb(38, 38, 38);
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fuente);
   text-align: start;
   line-height: 30px;
   font-size: 13px;
@@ -34,7 +58,7 @@ body {
   margin: 13px;
   color: white;
   text-decoration: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--fuente);
   display: flex;
 
 }
@@ -43,6 +67,7 @@ color: white;
 width: 190px;
 font-size: 17px;
 margin-top: 13px;
+font-family: var(--fuente);
 }
 .imgLogo{
   width: 140px;
@@ -62,12 +87,12 @@ margin-top: 10px;
 .followUs{
   width: 200px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--fuente);
 }
 .ContactUs{
   width: 280px;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--fuente);
 
 }
 .footeremailIcon{

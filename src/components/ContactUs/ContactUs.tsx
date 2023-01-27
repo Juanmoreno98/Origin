@@ -11,14 +11,14 @@ function ContactUs() {
   <div className="element-container">
 
 
-    <a className='float-element tooltip-left' href="https://api.whatsapp.com/send?phone=5491166417018&text=HOLA" > 
+    <a className='float-element tooltip-left'   href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!" > 
+<EmailIcon />
 
-        <WhatsAppIcon />
    </a>
 
-   <a className='float-element tooltip-left' href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!" > 
+   <a className='float-element tooltip-left' href="https://api.whatsapp.com/send?phone=5491166417018&text=HOLA" > 
 
-<EmailIcon />
+        <WhatsAppIcon />
 </a>
   </div>
 </div>
