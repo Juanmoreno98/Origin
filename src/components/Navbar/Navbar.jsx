@@ -51,14 +51,14 @@ function Navbar() {
 
       <div class="textos">
         <div class="titulo">
-          <h1>ORIGIN HOLDINGS <span>S.A.S</span></h1>
+        ORIGIN HOLDINGS S.A.S
         </div>
         <h2 class="cel-inactive">
           No se puede cargar la pagina en este tamaño de pantalla
         </h2>
 
         <div class="subtitulo">
-          <p>La mejor empresa constructora de Colombia</p>
+        La mejor empresa constructora de Colombia
         </div>
       </div>
     </header>
