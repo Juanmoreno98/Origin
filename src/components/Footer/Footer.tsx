@@ -18,27 +18,30 @@ function Footer() {
           <br></br>
           <hr color="#777777"></hr>
         </h4>
+        <div className="followUsContactContainer">
         <a
           className="iconsFooter"
           href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
         >
-          <FacebookIcon />
-          <div className="contactUsInfoLabel">www.facebook.com</div>
+          <FacebookIcon  className="iconsFooterItem"/>
+          <div className="followUsInfoLabel">www.facebook.com</div>
         </a>
         <a
           className="iconsFooter"
           href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
         >
-          <InstagramIcon />
-          <div className="contactUsInfoLabel">www.instagram.com</div>
+          <InstagramIcon className="iconsFooterItem" />
+          <div className="followUsInfoLabel">www.instagram.com</div>
         </a>
         <a
           className="iconsFooter"
           href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
         >
-          <TwitterIcon />
-          <div className="contactUsInfoLabel">www.twitter.com</div>
+          <TwitterIcon  className="iconsFooterItem"/>
+          <div className="followUsInfoLabel">www.twitter.com</div>
         </a>
+        </div>
+   
       </div>
       <div className="iconsNavigateFooter">
         <h4 className="ContactUs">
@@ -47,6 +50,9 @@ function Footer() {
           <br></br>
           <hr color="#777777"></hr>
         </h4>
+
+        <div className="ContactUsContactContainer">
+
         <a
           className="iconsFooter"
           href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
@@ -60,7 +66,7 @@ function Footer() {
           className="iconsFooter"
           href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
         >
-          <InstagramIcon />
+          <InstagramIcon  className="footeremailIcon"/>
           <div className="contactUsInfoLabel">
             maildelaconstructora@gmail.com
           </div>
@@ -69,11 +75,13 @@ function Footer() {
           className="iconsFooter"
           href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
         >
-          <TwitterIcon />
+          <TwitterIcon className="footeremailIcon" />
           <div className="contactUsInfoLabel">
             maildelaconstructora@gmail.com
           </div>
         </a>
+        </div>
+
       </div>
       <div className="carousel-wrapper">
         <div className="carousel-container">
