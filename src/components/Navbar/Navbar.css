@@ -472,6 +472,8 @@ margin-top: 14px;
       }
 }
 
+
+
 @media (max-width: 768px)
 {
 
@@ -694,6 +696,11 @@ height: 187px;
 }
 
 @media (max-width: 414px) {
+  .iconsNavigateFooter {
+    color: white;
+    margin-left: 0%;
+    width: 100vw;
+  }
   .header{
     width:100vw;   
     margin-right: 0px;
@@ -701,8 +708,8 @@ height: 187px;
   .bodyFooter{
     width:100vw;    
     grid-template-columns: repeat(1, 1fr);
-    /* min-height: 52rem;
-    max-height: 62rem ; */
+    min-height: 60rem;
+    max-height: 62rem ;
     margin-right: 0px;
   }
   .titleFooter{
@@ -711,7 +718,7 @@ height: 187px;
     font-size: 17px;
     /* margin-top: 1px; */
     margin-left:100px;
-    margin-top: -180px;
+    margin-top: -30px;
     }
     .imgLogo{
       width: 140px;
@@ -731,7 +738,7 @@ height: 187px;
       width: 280px;
       text-align: center;
       font-family: var(--fuente);
-      margin-top: -200px;
+      margin-top: -100px;
       margin-left: 28px;
     
     }
@@ -743,7 +750,7 @@ height: 187px;
     .ContactUsContactContainer{
       font-family: var(--fuente);
       margin-top: 10px;
-      margin-left: -30px;
+      margin-left: -10%;
     }
       
   .carousel-wrapper {
@@ -752,7 +759,7 @@ height: 187px;
         overflow: hidden;
       padding: 8px;
         border-radius: 8px;
-margin-top: -210px;
+margin-top: -80px;
         margin-left: 79px;
         box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
       
@@ -797,6 +804,18 @@ margin-left: 10px;
 }
 
 @media (max-width: 375px) {
+  .iconsNavigateFooter {
+    color: white;
+    margin-left: -2%
+  }
+  .ContactUs{
+    width: 280px;
+    text-align: center;
+    font-family: var(--fuente);
+    margin-top: -100px;
+    margin-left: 28px;
+  
+  }
   .header{
     width:100vw; 
     margin-right: 0px;
@@ -817,6 +836,43 @@ margin-right: 20px;
       right: -430px;
  
     }
+    .carousel-wrapper {
+      width: 240px;
+      height: 187px;
+          overflow: hidden;
+        padding: 8px;
+          border-radius: 8px;
+  margin-top: -50px;
+          margin-left: 70px;
+          box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+        
+        background: white;
+        
+        }
+        .titleFooter{
+          color: white;
+          width: 190px;
+          font-size: 17px;
+          /* margin-top: 1px; */
+          margin-left:97px;
+          margin-top: -30px;
+          }
+
+          .bodyFooter{
+            width:100vw;    
+            grid-template-columns: repeat(1, 1fr);
+            min-height: 52rem;
+            /* max-height: 62rem ; */
+            margin-right: 0px;
+          }
+          .imgLogo{
+            width: 140px;
+            border-radius: 50% ;
+            /* padding: 3rem; */
+          margin-left: 120px;
+          margin-top: 20px;
+      
+          }
 }
 
 @media (max-width: 325px) {
