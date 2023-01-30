@@ -25,8 +25,8 @@
   url("https://wallup.net/wp-content/uploads/2019/09/14179-black-and-white-cityscapes-architecture-buildings-skyscrapers.jpg");
   background: linear-gradient(to right, hsla(240, 8%, 3%, 0.719), hsla(210, 26%, 14%, 0.719) ),
   url("https://wallup.net/wp-content/uploads/2019/09/14179-black-and-white-cityscapes-architecture-buildings-skyscrapers.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  max-height: 500px;
-  min-height: 200px;
+  /* max-height: 500px;
+  min-height: 200px; */
 
   background-size: cover;
   background-repeat: no-repeat;
@@ -51,16 +51,33 @@ body {
   margin-left: 0;
 }
 .iconsNavigateFooter {
+  font-family: var(--fuente);
   color: white;
   padding: 2rem;
+  margin-top: 10px;
+}
+
+.followUsContactContainer{
+  margin-top: 10px;
+  margin-left: -60px;
+  font-family: var(--fuente);
+}
+.ContactUsContactContainer{
+  font-family: var(--fuente);
+  margin-top: 10px;
+  margin-left: -40px;
 }
 .iconsFooter{
-  margin: 13px;
-  color: white;
+
   text-decoration: none;
   font-family: var(--fuente);
   display: flex;
+  color: white;
 
+}
+.iconsFooterItem{
+color: white;
+  margin-left: 60px;
 }
 .titleFooter{
 color: white;
@@ -96,11 +113,19 @@ margin-top: 10px;
 
 }
 .footeremailIcon{
-  color: aqua;
+
   padding: 1px;
+  margin-left: 30px;
 }
 .contactUsInfoLabel{
   margin-left: 7px;
+  color: white;
+  font-family: var(--fuente);
+}
+.followUsInfoLabel{
+  margin-left: 7px;
+  color: white;
+  font-family: var(--fuente);
 }
 
 .carousel-wrapper {
