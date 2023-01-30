@@ -55,7 +55,9 @@ body {
   color: white;
   padding: 2rem;
   margin-top: 10px;
+  /* width: 100vw; */
 }
+
 
 .followUsContactContainer{
   margin-top: 10px;
