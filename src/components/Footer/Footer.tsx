@@ -92,7 +92,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="containerLogo">
         <h3 className="titleFooter">
           {" "}
           Origin Holdings S.A.S

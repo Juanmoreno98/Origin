@@ -164,24 +164,25 @@ background: white;
   animation-play-state: paused;
 }
 .carousel .image-one {
-  background: url("../assets/origin2.jpg");
+  background: url("../../img/sliderfooter1.jpeg");
   background-size: 17rem; 
   background-repeat: no-repeat;  
   object-fit: none;
 }
 .carousel .image-two {
-  background: url("../assets/imagen5.png");
+  background: url("../../img/sliderfooter2.jpeg");
   background-size: 17rem; 
   background-repeat: no-repeat;
   object-fit: none;
 }
 .carousel .image-three {
-  background: url("../assets/imagen9.png");
+  background: url("../../img/sliderfooter3.jpeg");
   background-size: 17rem; 
   background-repeat: no-repeat;
   object-fit: none;
 
 }
+
 /* .carousel .image-four {
   background: url("../assets/originlogo.jpg");
   background-size: 17rem; 

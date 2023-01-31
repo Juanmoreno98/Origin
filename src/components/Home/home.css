@@ -442,16 +442,50 @@
 .carousel2:hover {
   animation-play-state: paused;
 }
-.carousel2 .image-one {
-  background-image: url("https://images.unsplash.com/photo-1480936600919-bffa6b7ecf1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-}
-.carousel2 .image-two {
-  background-image: url("https://images.unsplash.com/photo-1475053081036-c8eb31d187b3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-}
-.carousel2 .image-three {
-  background-image: url("https://images.unsplash.com/photo-1525278070609-779c7adb7b71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
-}
+.carousel2 .image-one1 {
+  background-image: url("../../img/origin1BañoSlider1.jpeg");
+object-fit: cover;
+/* background-size:86%; */
+background-repeat: no-repeat;
 
+}
+.carousel2 .image-two1 {
+  background-image: url("../../img/origin1Cocina2Slider1.jpeg");
+
+  background-repeat: no-repeat;
+
+  object-fit: cover;
+
+}
+.carousel2 .image-three1 {
+  background-image: url("../../img/origin1CocinaSlider1.jpeg");
+  object-fit:cover;
+  /* background-size:86%; */
+background-repeat: no-repeat;
+
+}
+.carousel2 .image-one2 {
+  background-image: url("../../img/equipoTrabajo1.jpeg");
+object-fit: cover;
+/* background-size:86%; */
+background-repeat: no-repeat;
+
+}
+.carousel2 .image-two2 {
+  background-image: url("../../img/equipoTrabajo2.jpeg");
+
+  background-repeat: no-repeat;
+
+  object-fit: cover;
+
+}
+.carousel2 .image-three2{
+  background-image: url("../../img/equipoTrabajo3.jpeg");
+  object-fit:cover;
+  /* background-size:86%; */
+background-repeat: no-repeat;
+
+}
 @keyframes sliding {
   30% {
     transform: translateX(0);
