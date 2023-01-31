@@ -216,18 +216,18 @@ function Home() {
 <div className="carousel-wrapperHome">
   <div className="carousel-containerHome">
     <div className="carousel2">
-      <div className="image-one"></div>
-      <div className="image-two"></div>
-      <div className="image-three"></div>
+    <div className="image-one1"></div>
+      <div className="image-two1"></div>
+      <div className="image-three1"></div>
     </div>
   </div>
 </div>
 <div className="carousel-wrapperHome">
   <div className="carousel-containerHome">
     <div className="carousel2">
-      <div className="image-one"></div>
-      <div className="image-two"></div>
-      <div className="image-three"></div>
+    <div className="image-one2"></div>
+      <div className="image-two2"></div>
+      <div className="image-three2"></div>
     </div>
   </div>
 </div>
