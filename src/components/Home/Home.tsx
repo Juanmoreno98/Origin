@@ -1,19 +1,15 @@
 import React from 'react';
 import ContactUs from '../ContactUs/ContactUs.tsx';
 import Footer from '../Footer/Footer.tsx';
-import CardDetail from '../CardDetail/CardDetail';
 import Navbar from '../Navbar/Navbar';
-import img1 from "../../img/acabado piso.jpg"
-import img2 from "../../img/acabados 2.jpg"
-import img3 from "../../img/acabados.jpg"
-import img4 from "../../img/acabados 4.webp"
-import img5 from "../../img/Localidad Puente Aranda.avif"
-import img6 from "../../img/materiales-construccion.jpg"
-import img7 from "../../img/obra 2.jpg"
-import img8 from "../../img/obra 3.jpg"
-import img9 from "../../img/obra.webp"
-import "./home.css"
+import img1 from "../../img/La-Soledad-Norte.jpg"
+import img2 from "../../img/Santa_maria_del_lago.jpeg"
+import img3 from "../../img/Estacion_Avenida_Cali.jpg"
+import img4 from "../../img/aeropuerto_el_dorado.jpg"
+import img5 from "../../img/Tiatan_Plaza.jpg"
+import img6 from "../../img/Clinica_Santa_Maria_Del_Lago.jpg"
 import video from "../../film/video prueba.mp4"
+import "./home.css"
 
 
 function Home() {
@@ -39,11 +35,33 @@ function Home() {
                 <li className="carousel__slide">
                     <figure>
                         <div>
-                            <img src={img5} alt=""/>
+                            <img src={img1} alt=""/>
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span className="credit">Photo: Tim Marshall</span>
+                        Es un sector de fácil acceso; el barrio está rodeado por importantes vías principales como la Avenida Ciudad de Cali, la calle 80 y la calle 72.
+                            <span className="credit">Localidad de Puente Aranda</span>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li className="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src={img2} alt=""/>
+                        </div>
+                        <figcaption>
+                        Cuentas con la suerte de relajarte a pocos minutos en el Humedal Santa María del Lago 2.4 Km - 8 Min
+                            <span className="credit">Parque Santa Maria Del Lago</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li className="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src={img3} alt=""/>
+                        </div>
+                        <figcaption>
+                        Al interior de Soledad Norte se encuentran 54 paraderos del SITP, ubicados principalmente sobre la Avenida Ciudad de Cali y la calle 72.
+                            <span className="credit">Estacion Avenida De Cali</span>                            
                         </figcaption>
                     </figure>
                 </li>
@@ -53,8 +71,19 @@ function Home() {
                             <img src={img4} alt=""/>
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span className="credit">Photo: Christian Joudrey</span>                            
+                        Su ubicación cuenta con el beneficio de estar a 5.0 km - 17 min del aeropuerto internacional El Dorado.
+                            <span className="credit">Aeropuerto Internacional El Dorado</span>                            
+                        </figcaption>
+                    </figure>
+                </li>
+                <li className="carousel__slide">
+                    <figure>
+                        <div>
+                            <img src={img5} alt=""/>
+                        </div>
+                        <figcaption>
+                        Para el entretenimiento y comercio se encuentra uno de los mejores y más completos centros comerciales a 3.2 Km – 8 Min.
+                            <span className="credit">Centro Comercial Titan Plaza</span>                            
                         </figcaption>
                     </figure>
                 </li>
@@ -64,70 +93,36 @@ function Home() {
                             <img src={img6} alt=""/>
                         </div>
                         <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span className="credit">Photo: Steve Carter</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li className="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src={img7} alt=""/>
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span className="credit">Photo: Aleksandra Boguslawska</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li className="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src={img8} alt=""/>
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span className="credit">Photo: Rosan Harmens</span>                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li className="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src={img9} alt=""/>
-                        </div>
-                        <figcaption>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            <span className="credit">Photo: Annie Spratt</span>                            
+                        Su salud y bienestar también es importante para nosotros por eso el sector cuenta con una clínica a 1.9 Km – 8 Min
+                            <span className="credit">Clínica Infantil Sta. María del Lago</span>                            
                         </figcaption>
                     </figure>
                 </li>
             </ul>    
             <ul className="carousel__thumbnails">
                 <li>
-                    <label htmlFor="slide-1"><img src={img5} alt=""/></label>
+                    <label htmlFor="slide-1"><img src={img1} alt=""/></label>
                 </li>
                 <li>
-                    <label htmlFor="slide-2"><img src={img4} alt=""/></label>
+                    <label htmlFor="slide-2"><img src={img2} alt=""/></label>
                 </li>
                 <li>
-                    <label htmlFor="slide-3"><img src={img6} alt=""/></label>
+                    <label htmlFor="slide-3"><img src={img3} alt=""/></label>
                 </li>
                 <li>
-                    <label htmlFor="slide-4"><img src={img7} alt=""/></label>
+                    <label htmlFor="slide-4"><img src={img4} alt=""/></label>
                 </li>
                 <li>
-                    <label htmlFor="slide-5"><img src={img8} alt=""/></label>
+                    <label htmlFor="slide-5"><img src={img5} alt=""/></label>
                 </li>
                 <li>
-                    <label htmlFor="slide-6"><img src={img9} alt=""/></label>
+                    <label htmlFor="slide-6"><img src={img6} alt=""/></label>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 </div>
-
 <div className='videoHome'>
   <video width="200px" autoPlay muted playsInline controls >
     <source src={video} type="video/mp4" />
