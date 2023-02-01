@@ -10,7 +10,8 @@ import prueba from "../assets/imagen8.png";
 
 function Footer() {
   return (
-    <footer className="bodyFooter">
+  <div>
+     <footer className="bodyFooter">
       <div className="iconsNavigateFooter">
         <h4 className="followUs">
           FOLLOW US
@@ -102,10 +103,13 @@ function Footer() {
         <img className="imgLogo" src={logo} alt="" />
       </div>
 
-      <div className="copyrigth">
+    
+    </footer>
+    <div className="copyrigth">
         Copyright © {new Date().getFullYear()} Origin Holdings S.A.S
       </div>
-    </footer>
+  </div>
+   
   );
 }
 

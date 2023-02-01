@@ -699,7 +699,7 @@ height: 187px;
   .copyrigth {
     position: fixed;
     width: 100%;
-    height:23.693rem;
+    height:2rem;
     bottom: 0;
     top: -1;
     background: rgb(38, 38, 38);
@@ -824,7 +824,7 @@ margin-left: 10px;
   .copyrigth {
     position: fixed;
     width: 100%;
-    height:25rem;
+    height:2rem;
     bottom: 0;
     top: -1;
     background: rgb(38, 38, 38);
@@ -838,19 +838,25 @@ margin-left: 10px;
 
 
 @media (max-width:393px){
-  .copyrigth {
-    position: fixed;
+  .bodyFooter{
+    width:100vw; 
+    grid-template-columns: repeat(1, 1fr);
+    margin-right: 0px;
+    /* height:12vh; */
+  }
+  /* .copyrigth {
+    position: relative;
     width: 100%;
-    height:20.8rem;
-    bottom: 0;
-    top: -1;
+    height:2rem;
+
     background: rgb(38, 38, 38);
     color: white;
     font-family: var(--fuente);
     text-align: start;
     line-height: 30px;
     font-size: 13px;
-  }
+  } */
+
 }
 
 @media (max-width: 375px) {
@@ -884,7 +890,7 @@ margin-left: 10px;
   .copyrigth {
     position: fixed;
     width: 100%;
-    height: 9.36rem;
+    height:2rem;
     bottom: 0;
     top: -1;
     background: rgb(38, 38, 38);
@@ -946,7 +952,7 @@ margin-right: 20px;
   .copyrigth {
     position: fixed;
     width: 100%;
-    height: 14rem;
+    height: 2rem;
     bottom: 0;
     top: -1;
     background: rgb(38, 38, 38);
