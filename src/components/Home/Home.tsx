@@ -8,6 +8,13 @@ import img3 from "../../img/Estacion_Avenida_Cali.jpg"
 import img4 from "../../img/aeropuerto_el_dorado.jpg"
 import img5 from "../../img/Tiatan_Plaza.jpg"
 import img6 from "../../img/Clinica_Santa_Maria_Del_Lago.jpg"
+import TIPO1 from "../../img/Apto_Tipo1.JPG"
+import TIPO2 from "../../img/Apto_Tipo2.JPG"
+import TIPO3 from "../../img/Apto_Tipo3.JPG"
+import TIPO4 from "../../img/Apto_Tipo4.JPG"
+import TIPO5 from "../../img/Apto_Tipo5.JPG"
+import APTOS from "../../img/APTOS.png"
+
 import video from "../../film/video prueba.mp4"
 import "./home.css"
 
@@ -133,12 +140,12 @@ function Home() {
 <div className="content-wrapper">
   <div className="news-card">
     <a href="#" className="news-card__card-link"></a>
-    <img src="https://images.pexels.com/photos/127513/pexels-photo-127513.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" className="news-card__image"/>
+    <img src={TIPO1} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
-      <h2 className="news-card__title">Amazing First Title</h2>
-      <div className="news-card__post-date">Jan 29, 2018</div>
+      <h2 className="news-card__title">Apartamento Tipo 1</h2>
+      <div className="news-card__post-date">45.56 m2 Area Privada</div>
       <div className="news-card__details-wrapper">
-        <p className="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio, pariatur&hellip;</p>
+        <p className="news-card__excerpt"> Apartamentos Num: 201 - 301 - 401 - 501 <br /> 2 alcobas, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
         <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
@@ -146,12 +153,12 @@ function Home() {
 
   <div className="news-card">
     <a href="#" className="news-card__card-link"></a>
-    <img src="https://images.pexels.com/photos/631954/pexels-photo-631954.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" className="news-card__image"/>
+    <img src={TIPO2} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
-      <h2 className="news-card__title">Amazing Second Title that is Quite Long</h2>
-      <div className="news-card__post-date">Jan 29, 2018</div>
+      <h2 className="news-card__title">Apartamento Tipo 2</h2>
+      <div className="news-card__post-date">61.73 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
-        <p className="news-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam obcaecati ex natus nulla rem sequi laborum quod fugit&hellip;</p>
+        <p className="news-card__excerpt">Apartamentos Num: 202 - 302 - 402 - 503 <br />3 alcobas, sala comedor, 2 baños, cocina, área de ropas independiente&hellip;</p>
         <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
@@ -159,12 +166,12 @@ function Home() {
 
   <div className="news-card">
     <a href="#" className="news-card__card-link"></a>
-    <img src="https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="" className="news-card__image"/>
+    <img src={TIPO3} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
-      <h2 className="news-card__title">Amazing Title</h2>
-      <div className="news-card__post-date">Jan 29, 2018</div>
+      <h2 className="news-card__title">Apartamento Tipo 3</h2>
+      <div className="news-card__post-date">45.45 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
-        <p className="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis beatae&hellip;</p>
+        <p className="news-card__excerpt">Apartamentos Num: 205 - 305 - 405 - 505 <br />2 alcobas, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
         <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
@@ -172,12 +179,12 @@ function Home() {
 
   <div className="news-card">
     <a href="#" className="news-card__card-link"></a>
-    <img src="https://images.pexels.com/photos/248486/pexels-photo-248486.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" className="news-card__image"/>
+    <img src={TIPO4} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
-      <h2 className="news-card__title">Amazing Forth Title that is Quite Long</h2>
-      <div className="news-card__post-date">Jan 29, 2018</div>
+      <h2 className="news-card__title">Apartamento Tipo 4</h2>
+      <div className="news-card__post-date">32.71 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
-        <p className="news-card__excerpt">Lorem ipsum dolor sit amet!</p>
+        <p className="news-card__excerpt">Apartamentos Num: 204 - 304 - 404 - 504 <br />Aparta estudio 1 alcoba, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
         <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
@@ -185,12 +192,12 @@ function Home() {
 
   <div className="news-card">
     <a href="#" className="news-card__card-link"></a>
-    <img src="https://images.pexels.com/photos/206660/pexels-photo-206660.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" className="news-card__image"/>
+    <img src={TIPO5} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
-      <h2 className="news-card__title">Amazing Fifth Title</h2>
-      <div className="news-card__post-date">Jan 29, 2018</div>
+      <h2 className="news-card__title">Apartamento Tipo 5</h2>
+      <div className="news-card__post-date">23.31 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
-        <p className="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia iure architecto deserunt distinctio&hellip;</p>
+        <p className="news-card__excerpt">Apartamentos Num: 203 - 303 - 403 - 503 <br />Aparta estudio 1 alcoba, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
         <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
@@ -198,10 +205,10 @@ function Home() {
 
   <div className="news-card">
     <a href="#" className="news-card__card-link"></a>
-    <img src="https://images.pexels.com/photos/210243/pexels-photo-210243.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="" className="news-card__image"/>
+    <img src={APTOS} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
-      <h2 className="news-card__title">Amazing 6<sup>th</sup> Title</h2>
-      <div className="news-card__post-date">Jan 29, 2018</div>
+      <h2 className="news-card__title"> Apartamentos</h2>
+      <div className="news-card__post-date"> 5° Pisos - 20 APTO</div>
       <div className="news-card__details-wrapper">
         <p className="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia.</p>
         <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
