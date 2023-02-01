@@ -139,79 +139,80 @@ function Home() {
 {/* ------------------------------------------------------------------------------------------------------------------->>>> */}
 <div className="content-wrapper">
   <div className="news-card">
-    <a href="#" className="news-card__card-link"></a>
+    <a className="news-card__card-link"></a>
     <img src={TIPO1} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
       <h2 className="news-card__title">Apartamento Tipo 1</h2>
       <div className="news-card__post-date">45.56 m2 Area Privada</div>
       <div className="news-card__details-wrapper">
         <p className="news-card__excerpt"> Apartamentos Num: 201 - 301 - 401 - 501 <br /> 2 alcobas, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
-        <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
+        {/* <a className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a> */}
+        <button className="news-card__read-more">Ver Mas...</button>
       </div>
     </div>
   </div>
 
   <div className="news-card">
-    <a href="#" className="news-card__card-link"></a>
+    <a className="news-card__card-link"></a>
     <img src={TIPO2} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
       <h2 className="news-card__title">Apartamento Tipo 2</h2>
       <div className="news-card__post-date">61.73 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
         <p className="news-card__excerpt">Apartamentos Num: 202 - 302 - 402 - 503 <br />3 alcobas, sala comedor, 2 baños, cocina, área de ropas independiente&hellip;</p>
-        <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
+        <a className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
   </div>
 
   <div className="news-card">
-    <a href="#" className="news-card__card-link"></a>
+    <a className="news-card__card-link"></a>
     <img src={TIPO3} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
       <h2 className="news-card__title">Apartamento Tipo 3</h2>
       <div className="news-card__post-date">45.45 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
         <p className="news-card__excerpt">Apartamentos Num: 205 - 305 - 405 - 505 <br />2 alcobas, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
-        <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
+        <a className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
   </div>
 
   <div className="news-card">
-    <a href="#" className="news-card__card-link"></a>
+    <a className="news-card__card-link"></a>
     <img src={TIPO4} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
       <h2 className="news-card__title">Apartamento Tipo 4</h2>
       <div className="news-card__post-date">32.71 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
         <p className="news-card__excerpt">Apartamentos Num: 204 - 304 - 404 - 504 <br />Aparta estudio 1 alcoba, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
-        <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
+        <a className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
   </div>
 
   <div className="news-card">
-    <a href="#" className="news-card__card-link"></a>
+    <a className="news-card__card-link"></a>
     <img src={TIPO5} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
       <h2 className="news-card__title">Apartamento Tipo 5</h2>
       <div className="news-card__post-date">23.31 m2 - Area Privada</div>
       <div className="news-card__details-wrapper">
         <p className="news-card__excerpt">Apartamentos Num: 203 - 303 - 403 - 503 <br />Aparta estudio 1 alcoba, sala comedor, 1 baño, cocina y área de ropas&hellip;</p>
-        <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
+        <a className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
   </div>
 
   <div className="news-card">
-    <a href="#" className="news-card__card-link"></a>
+    <a className="news-card__card-link"></a>
     <img src={APTOS} alt="" className="news-card__image"/>
     <div className="news-card__text-wrapper">
       <h2 className="news-card__title"> Apartamentos</h2>
       <div className="news-card__post-date"> 5° Pisos - 20 APTO</div>
       <div className="news-card__details-wrapper">
         <p className="news-card__excerpt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur nemo tempore repellat? Ullam sed officia.</p>
-        <a href="#" className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
+        <a className="news-card__read-more">Read more <i className="fas fa-long-arrow-alt-right"></i></a>
       </div>
     </div>
   </div>
