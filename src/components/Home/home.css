@@ -33,6 +33,12 @@
     z-index: 1;
   }
 } */
+.button{
+  z-index: 1;
+}
+.positionButton{
+  margin-top: 10px;
+}
 
 @media (max-width: 914px){
   .containerHome {
@@ -170,6 +176,11 @@
   z-index: 1;
   margin-bottom: 30px;
 }
+.videoTipo1{
+  width: 200px;
+  height: 375px;
+}
+
 
 .carousel__slides {
   position: relative;
