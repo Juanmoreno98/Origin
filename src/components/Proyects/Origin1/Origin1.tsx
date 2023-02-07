@@ -17,14 +17,14 @@ function Origin1() {
       <Navbar />
       <div className="barraOrigin1"></div>
       <div className="titleContainerOrigin1">
-        <span className="titleOrigin1"> Origin 1 </span>
+        <span className="titleOrigin1"> ORIGIN 1 </span>
       </div>
 <div className="containerCarouselOrigin1Beta">
 
-	<div className="section full-height over-hide px-4 px-sm-0">
+	<div>
 		<div className="container">
 			<div className="row full-height justify-content-center">
-				<div className="col-lg-10 col-xl-8 align-self-center padding-tb">
+				<div className="ColumnsCarouselOrigin1">
 					<div className="section mx-auto text-center slider-height-padding">
 			          	<input className="checkbox frst" type="radio" id="slide-1" name="slider" checked/>
 			          	<label htmlFor="slide-1"></label>
@@ -66,7 +66,10 @@ function Origin1() {
       </section>
     </div>
     
-  
+		<div>
+         <div className="Origin1MapContainer"><iframe title='asd' src="https://www.google.com/maps/d/u/0/embed?mid=1yPnBiOknFjvaQkr-CWxPfiSFAa9ARKo&ehbc=2E312F" className="Origin1Mapfullscreen"></iframe><div><small className='smallOrigin2'></small></div><style>#gmap_canvas img
+         </style></div><br />
+    </div>
       <ContactUs />
       <Footer />
     </div>
