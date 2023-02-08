@@ -1,11 +1,79 @@
-import { Toolbar } from "@mui/material";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import Button from "@mui/material/Button";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import { alpha, styled } from "@mui/material/styles";
+import { Box } from "@mui/system";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/LOGO2.png";
+
+const StyledMenu = styled((props) => (
+  <Menu
+    elevation={0}
+    anchorOrigin={{
+      vertical: "bottom",
+      horizontal: "right",
+    }}
+    transformOrigin={{
+      vertical: "top",
+      horizontal: "right",
+    }}
+    {...props}
+  />
+))(({ theme }) => ({
+  "& .MuiPaper-root": {
+    borderRadius: 6,
+    marginTop: theme.spacing(1),
+    minWidth: 180,
+    color:
+      theme.palette.mode === "light"
+        ? "rgb(55, 65, 81)"
+        : theme.palette.grey[300],
+    boxShadow:
+      "rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
+    "& .MuiMenu-list": {
+      padding: "4px 0",
+    },
+    "& .MuiMenuItem-root": {
+      "& .MuiSvgIcon-root": {
+        fontSize: 18,
+        color: theme.palette.text.secondary,
+        marginRight: theme.spacing(1.5),
+      },
+      "&:active": {
+        backgroundColor: alpha(
+          theme.palette.primary.main,
+          theme.palette.action.selectedOpacity
+        ),
+      },
+    },
+  },
+}));
 
 function Navbar() {
+  const navigate = useNavigate();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleNavigateOrigin1 = () => {
+    navigate("/projects/Origin1");
+  };
+  const handleNavigateOrigin2 = () => {
+    navigate("/projects/Origin2");
+  };
+  const handleGoHome = () => {
+    navigate("/");
+  };
+
   return (
-    <div className="navGeneral">
+    <>
       <header className="header">
         <div class="wave">
           <div class="wave2">
@@ -22,16 +90,44 @@ function Navbar() {
           </div>
         </div>
 
-        <nav class="menu" id="menu">
-          <div class="navegacion">
-            <div class="lista-active lista" id="lista">
-              <a href="/">Inicio</a>
-              <a href="SobreNosotros/SobreNosotros.html">Sobre nosotros</a>
-              <a href="Proyectos/Proyectos.html">Proyectos</a>
-            </div>
-          </div>
-        </nav>
+        <Box sx={{display: 'flex',justifyContent:"end",fontFamily:"Segoe UI Symbol"}}>
+          <Button sx={{ color: "#fff" }} onClick={handleGoHome}>
+            Inicio
+          </Button>
+         
 
+          <Button
+            id="demo-customized-button"
+            aria-controls={open ? "demo-customized-menu" : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? "true" : undefined}
+            sx={{ color: "#fff" }}
+            disableElevation
+            onClick={handleClick}
+            endIcon={<KeyboardArrowDownIcon />}
+          >
+            Proyectos
+          </Button>
+          <StyledMenu
+            id="demo-customized-menu"
+            MenuListProps={{
+              "aria-labelledby": "demo-customized-button",
+            }}
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleNavigateOrigin1} disableRipple>
+            
+              Origin 1
+            </MenuItem>
+            <MenuItem onClick={handleNavigateOrigin2} disableRipple>
+         
+              Origin 2
+            </MenuItem>
+          </StyledMenu>
+        <Button sx={{ color: "#fff" }}>Sobre nosotros</Button>
+        </Box>
         <div class="textos">
           <div class="titulo">ORIGIN HOLDINGS S.A.S</div>
           <h2 class="cel-inactive">
@@ -41,7 +137,7 @@ function Navbar() {
           <div class="subtitulo">La mejor empresa constructora de Colombia</div>
         </div>
       </header>
-    </div>
+    </>
   );
 }
 

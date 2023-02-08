@@ -1,11 +1,111 @@
-import React from 'react';
-import "./Origin2.css"
+import React from "react";
+import ContactUs from "../../ContactUs/ContactUs.tsx";
+import Footer from "../../Footer/Footer.tsx";
+import Navbar from "../../Navbar/Navbar";
+import baño1 from  "../../../img/Apto_Tipo2.JPG";
+import cocina1 from "../../../img/Apto_Tipo2.JPG"
+import img5 from "../../../img/Apto_Tipo2.JPG"
+import "./Origin2.css";
 
 function Origin2() {
   return (
-    <div>
-         <div className='mapOrigin2'><iframe title='asd' src="https://www.google.com/maps/d/u/0/embed?mid=1yPnBiOknFjvaQkr-CWxPfiSFAa9ARKo&ehbc=2E312F" width="640" height="480"></iframe><div className='divOrigin2'><small className='smallOrigin2'>& <a href="https://nouc.se/">nouc.se</a></small></div><style>#gmap_canvas img
-         </style></div><br />
+    <div className="backgroundOrigin1">
+      <Navbar />
+      <div className="barraOrigin1"></div>
+      <div className="titleContainerOrigin1">
+        <span className="titleOrigin1"> ORIGIN 2 </span>
+      </div>
+      <div className="containerCarouselOrigin2Beta">
+        <div>
+          <div className="container">
+            <div className="row full-height justify-content-center">
+              <div className="ColumnsCarouselOrigin2">
+                <div className="section mx-auto text-center slider-height-padding">
+                  <input
+                    className="checkbox frst"
+                    type="radio"
+                    id="slide-1"
+                    name="slider"
+                    checked
+                  />
+                  <label htmlFor="slide-1"></label>
+                  <input
+                    className="checkbox scnd"
+                    type="radio"
+                    name="slider"
+                    id="slider-2"
+                    checked
+                  />
+                  <label htmlFor="slider-2"></label>
+                  <input
+                    className="checkbox thrd"
+                    type="radio"
+                    name="slider"
+                    checked
+                    id="slider-3"
+                  />
+                  <label htmlFor="slider-3"></label>
+                  <input
+                    className="checkbox foth"
+                    type="radio"
+                    name="slider"
+                    checked
+                    id="slider-4"
+                  />
+                  <label htmlFor="slider-4"></label>
+                  <ul className="ulOrigin2">
+                    <li>
+                      <span></span>
+                    </li>
+                    <li>
+                      <span></span>
+                    </li>
+                    <li>
+                      <span></span>
+                    </li>
+                    <li>
+                      <span></span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="textOrigin1">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing
+        </div>
+
+        <section className="StyledSlider2">
+          <img className="imgTest2" src={cocina1} alt="" />
+          <img className="imgTest2" src={baño1} alt="" />
+          <img className="imgTest2" src={img5} alt="" />
+        </section>
+      </div>
+
+      <div>
+        <div className="Origin1MapContainer">
+          <iframe
+            title="asd"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1yPnBiOknFjvaQkr-CWxPfiSFAa9ARKo&ehbc=2E312F"
+            className="Origin1Mapfullscreen"
+          ></iframe>
+          <div>
+            <small className="smallOrigin2"></small>
+          </div>
+          <style>#gmap_canvas img</style>
+        </div>
+        <br />
+      </div>
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
