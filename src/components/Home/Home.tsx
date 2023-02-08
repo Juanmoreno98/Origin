@@ -3,8 +3,8 @@ import React from "react";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
+// import DialogContent from "@mui/material/DialogContent";
+// import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
@@ -36,7 +36,7 @@ import APTOS from "../../img/APTOS.png";
 import video from "../../film/video prueba.mp4";
 import "./home.css";
 import { CardMedia } from "@mui/material";
-import { green, red } from "@mui/material/colors";
+// import { green, red } from "@mui/material/colors";
 
 const Transition = React.forwardRef(function Transition(
   props: TransitionProps & {
@@ -69,15 +69,11 @@ function createData(
   };
 }
 
-function createDataApto(
-  name: number,
-  disponible: string,
-  m2: string,
-) {
+function createDataApto(name: number, disponible: string, m2: string) {
   return {
     name,
     disponible,
-    m2
+    m2,
   };
 }
 
@@ -205,6 +201,15 @@ function Home() {
   return (
     <div>
       <Navbar></Navbar>
+
+      <div className="banner">
+      <span className="code">CONOCE NUESTRO ULTIMO PROYECTO</span> <br /> DESLIZA HACIA ABAJO
+      </div>
+
+      <div className="titleContainerOrigin3">
+        <span className="titleOrigin3"> ORIGIN 3 </span>
+      </div>
+
       <div className="barra"></div>
       <div className="initialPosition">
         <div className="box">
@@ -348,6 +353,31 @@ function Home() {
         </div>
       </div>
       {/* ------------------------------------------------------------------------------------------------------------------->>>> */}
+      {/* google maps  */}
+
+      <div className="titleContainerOrigin3">
+        <span className="titleOrigin3"> Ubicacion</span>
+      </div>
+
+      <div className="barra2"></div>
+      <div>
+        <div className="Origin1MapContainer">
+          <iframe
+            className="Origin1MapfullscreenHome"
+            src="https://www.google.com/maps/d/embed?mid=1Es9h5eKHodOCCr0z35MtOwX_TR_ogJQ&ehbc=2E312F"
+          ></iframe>
+        </div>
+        <br />
+      </div>
+
+      
+      
+  
+{/* -------------------------------------------------------------------------------------------------------------------->>>>>>>>> */}
+<div className="titleContainerOrigin3">
+        <span className="titleOrigin3"> Planos</span>
+      </div>
+      
       <div className="content-wrapper">
         <div className="news-card">
           <a className="news-card__card-link"></a>
@@ -361,98 +391,98 @@ function Home() {
                 Apartamentos Num: 201 - 301 - 401 - 501 <br /> 2 alcobas, sala
                 comedor, 1 baño, cocina y área de ropas&hellip;
               </p>
-              </div>
-              <div>
-                <div className="positionButton">
-                  <Button
-                    className="button"
-                    variant="contained"
-                    onClick={handleClickOpenTipo1}
-                  >
-                    ver Mas
-                  </Button>
-                </div>
-                <Dialog
-                  open={openTipo1}
-                  TransitionComponent={Transition}
-                  keepMounted
-                  onClose={handleCloseTipo1}
-                  aria-describedby="alert-dialog-slide-description"
+            </div>
+            <div>
+              <div className="positionButton">
+                <Button
+                  className="button"
+                  variant="contained"
+                  onClick={handleClickOpenTipo1}
                 >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      width: 480,
-                      height: 800,
-                      objectFit: "fill",
-                      marginTop: 0,
-                      marginLeft: 7,
-                    }}
-                    image={TIPO1}
-                    alt="img"
-                  />
-                  <CardMedia
-                    component="video"
-                    image={video}
-                    controls
-                    className="videoTipo1"
-                  />
-                  <br />
-                  <hr />
-                  <DialogTitle>{"Apartamentos Tipo 1"}</DialogTitle>
-                  <DialogActions>
-                    <TableContainer component={Paper}>
-                      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableHead>
-                          <TableRow>
-                            <TableCell>#&nbsp;Apto</TableCell>
-                            <TableCell align="right">Estado</TableCell>
-                            <TableCell align="center">m2</TableCell>
-                            <TableCell align="right">Alcobas</TableCell>
-                            <TableCell align="right">Baños</TableCell>
-                            <TableCell align="right">Cocina</TableCell>
-                            <TableCell align="right">
-                              Sala&nbsp;Comedor
+                  ver Mas
+                </Button>
+              </div>
+              <Dialog
+                open={openTipo1}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={handleCloseTipo1}
+                aria-describedby="alert-dialog-slide-description"
+              >
+                <CardMedia
+                  component="img"
+                  sx={{
+                    width: 480,
+                    height: 800,
+                    objectFit: "fill",
+                    marginTop: 0,
+                    marginLeft: 7,
+                  }}
+                  image={TIPO1}
+                  alt="img"
+                />
+                <CardMedia
+                  component="video"
+                  image={video}
+                  controls
+                  className="videoTipo1"
+                />
+                <br />
+                <hr />
+                <DialogTitle>{"Apartamentos Tipo 1"}</DialogTitle>
+                <DialogActions>
+                  <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                      <TableHead>
+                        <TableRow>
+                          <TableCell>#&nbsp;Apto</TableCell>
+                          <TableCell align="right">Estado</TableCell>
+                          <TableCell align="center">m2</TableCell>
+                          <TableCell align="right">Alcobas</TableCell>
+                          <TableCell align="right">Baños</TableCell>
+                          <TableCell align="right">Cocina</TableCell>
+                          <TableCell align="right">Sala&nbsp;Comedor</TableCell>
+                          <TableCell align="right">Area&nbsp;Ropas</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rowsTipo1.map((row) => (
+                          <TableRow
+                            key={row.name}
+                            sx={{
+                              "&:last-child td, &:last-child th": {
+                                border: 0,
+                              },
+                            }}
+                          >
+                            <TableCell component="th" scope="row">
+                              {row.name}
                             </TableCell>
-                            <TableCell align="right">Area&nbsp;Ropas</TableCell>
+                            <TableCell align="center">
+                              {row.disponible}
+                            </TableCell>
+                            <TableCell align="center">{row.m2}</TableCell>
+                            <TableCell align="center">{row.alcobas}</TableCell>
+                            <TableCell align="center">{row.baños}</TableCell>
+                            <TableCell align="center">{row.cocina}</TableCell>
+                            <TableCell align="center">
+                              {row.salaComedor}
+                            </TableCell>
+                            <TableCell align="center">{row.areaRopa}</TableCell>
                           </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {rowsTipo1.map((row) => (
-                            <TableRow
-                              key={row.name}
-                              sx={{
-                                "&:last-child td, &:last-child th": {
-                                  border: 0,
-                                },
-                              }}
-                            >
-                              <TableCell component="th" scope="row">
-                                {row.name}
-                              </TableCell>
-                              <TableCell align="center">
-                                {row.disponible}
-                              </TableCell>
-                              <TableCell align="center">{row.m2}</TableCell>
-                              <TableCell align="center">
-                                {row.alcobas}
-                              </TableCell>
-                              <TableCell align="center">{row.baños}</TableCell>
-                              <TableCell align="center">{row.cocina}</TableCell>
-                              <TableCell align="center">
-                                {row.salaComedor}
-                              </TableCell>
-                              <TableCell align="center">
-                                {row.areaRopa}
-                              </TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  </DialogActions>
-                  <Button sx={{margin: 1}} variant="contained" onClick={handleCloseTipo1}>Cerrar</Button>
-                </Dialog>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </DialogActions>
+                <Button
+                  sx={{ margin: 1 }}
+                  variant="contained"
+                  onClick={handleCloseTipo1}
+                >
+                  Cerrar
+                </Button>
+              </Dialog>
             </div>
           </div>
         </div>
@@ -550,7 +580,13 @@ function Home() {
                     </Table>
                   </TableContainer>
                 </DialogActions>
-                <Button sx={{margin: 1}} variant="contained" onClick={handleCloseTipo2}>Cerrar</Button>
+                <Button
+                  sx={{ margin: 1 }}
+                  variant="contained"
+                  onClick={handleCloseTipo2}
+                >
+                  Cerrar
+                </Button>
               </Dialog>
             </div>
           </div>
@@ -649,7 +685,13 @@ function Home() {
                     </Table>
                   </TableContainer>
                 </DialogActions>
-                <Button sx={{margin: 1}} variant="contained" onClick={handleCloseTipo3}>Cerrar</Button>
+                <Button
+                  sx={{ margin: 1 }}
+                  variant="contained"
+                  onClick={handleCloseTipo3}
+                >
+                  Cerrar
+                </Button>
               </Dialog>
             </div>
           </div>
@@ -669,96 +711,96 @@ function Home() {
               </p>
             </div>
             <div>
-                <div className="positionButton">
-                  <Button
-                    className="button"
-                    variant="contained"
-                    onClick={handleClickOpenTipo4}
-                  >
-                    ver Mas
-                  </Button>
-                </div>
-                <Dialog
-                  open={openTipo4}
-                  TransitionComponent={Transition}
-                  keepMounted
-                  onClose={handleCloseTipo4}
-                  aria-describedby="alert-dialog-slide-description"
+              <div className="positionButton">
+                <Button
+                  className="button"
+                  variant="contained"
+                  onClick={handleClickOpenTipo4}
                 >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      width: 580,
-                      height: 800,
-                      objectFit: "fill",
-                      marginTop: 0,
-                      marginLeft: 1,
-                    }}
-                    image={TIPO4}
-                    alt="img"
-                  />
-                  <CardMedia
-                    component="video"
-                    image={video}
-                    controls
-                    className="videoTipo1"
-                  />
-                  <br />
-                  <hr />
-                  <DialogTitle>{"Apartamentos Tipo 4"}</DialogTitle>
-                  <DialogActions>
-                    <TableContainer component={Paper}>
-                      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableHead>
-                          <TableRow>
-                            <TableCell>#&nbsp;Apto</TableCell>
-                            <TableCell align="right">Estado</TableCell>
-                            <TableCell align="center">m2</TableCell>
-                            <TableCell align="right">Alcobas</TableCell>
-                            <TableCell align="right">Baños</TableCell>
-                            <TableCell align="right">Cocina</TableCell>
-                            <TableCell align="right">
-                              Sala&nbsp;Comedor
+                  ver Mas
+                </Button>
+              </div>
+              <Dialog
+                open={openTipo4}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={handleCloseTipo4}
+                aria-describedby="alert-dialog-slide-description"
+              >
+                <CardMedia
+                  component="img"
+                  sx={{
+                    width: 580,
+                    height: 800,
+                    objectFit: "fill",
+                    marginTop: 0,
+                    marginLeft: 1,
+                  }}
+                  image={TIPO4}
+                  alt="img"
+                />
+                <CardMedia
+                  component="video"
+                  image={video}
+                  controls
+                  className="videoTipo1"
+                />
+                <br />
+                <hr />
+                <DialogTitle>{"Apartamentos Tipo 4"}</DialogTitle>
+                <DialogActions>
+                  <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                      <TableHead>
+                        <TableRow>
+                          <TableCell>#&nbsp;Apto</TableCell>
+                          <TableCell align="right">Estado</TableCell>
+                          <TableCell align="center">m2</TableCell>
+                          <TableCell align="right">Alcobas</TableCell>
+                          <TableCell align="right">Baños</TableCell>
+                          <TableCell align="right">Cocina</TableCell>
+                          <TableCell align="right">Sala&nbsp;Comedor</TableCell>
+                          <TableCell align="right">Area&nbsp;Ropas</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rowsTipo4.map((row) => (
+                          <TableRow
+                            key={row.name}
+                            sx={{
+                              "&:last-child td, &:last-child th": {
+                                border: 0,
+                              },
+                            }}
+                          >
+                            <TableCell component="th" scope="row">
+                              {row.name}
                             </TableCell>
-                            <TableCell align="right">Area&nbsp;Ropas</TableCell>
+                            <TableCell align="center">
+                              {row.disponible}
+                            </TableCell>
+                            <TableCell align="center">{row.m2}</TableCell>
+                            <TableCell align="center">{row.alcobas}</TableCell>
+                            <TableCell align="center">{row.baños}</TableCell>
+                            <TableCell align="center">{row.cocina}</TableCell>
+                            <TableCell align="center">
+                              {row.salaComedor}
+                            </TableCell>
+                            <TableCell align="center">{row.areaRopa}</TableCell>
                           </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {rowsTipo4.map((row) => (
-                            <TableRow
-                              key={row.name}
-                              sx={{
-                                "&:last-child td, &:last-child th": {
-                                  border: 0,
-                                },
-                              }}
-                            >
-                              <TableCell component="th" scope="row">
-                                {row.name}
-                              </TableCell>
-                              <TableCell align="center">
-                                {row.disponible}
-                              </TableCell>
-                              <TableCell align="center">{row.m2}</TableCell>
-                              <TableCell align="center">
-                                {row.alcobas}
-                              </TableCell>
-                              <TableCell align="center">{row.baños}</TableCell>
-                              <TableCell align="center">{row.cocina}</TableCell>
-                              <TableCell align="center">
-                                {row.salaComedor}
-                              </TableCell>
-                              <TableCell align="center">
-                                {row.areaRopa}
-                              </TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  </DialogActions>
-                  <Button sx={{margin: 1}} variant="contained" onClick={handleCloseTipo4}>Cerrar</Button>
-                </Dialog>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </DialogActions>
+                <Button
+                  sx={{ margin: 1 }}
+                  variant="contained"
+                  onClick={handleCloseTipo4}
+                >
+                  Cerrar
+                </Button>
+              </Dialog>
             </div>
           </div>
         </div>
@@ -777,96 +819,96 @@ function Home() {
               </p>
             </div>
             <div>
-                <div className="positionButton">
-                  <Button
-                    className="button"
-                    variant="contained"
-                    onClick={handleClickOpenTipo5}
-                  >
-                    ver Mas
-                  </Button>
-                </div>
-                <Dialog
-                  open={openTipo5}
-                  TransitionComponent={Transition}
-                  keepMounted
-                  onClose={handleCloseTipo5}
-                  aria-describedby="alert-dialog-slide-description"
+              <div className="positionButton">
+                <Button
+                  className="button"
+                  variant="contained"
+                  onClick={handleClickOpenTipo5}
                 >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      width: 580,
-                      height: 800,
-                      objectFit: "fill",
-                      marginTop: 0,
-                      marginLeft: 0,
-                    }}
-                    image={TIPO5}
-                    alt="img"
-                  />
-                  <CardMedia
-                    component="video"
-                    image={video}
-                    controls
-                    className="videoTipo1"
-                  />
-                  <br />
-                  <hr />
-                  <DialogTitle>{"Apartamentos Tipo 5"}</DialogTitle>
-                  <DialogActions>
-                    <TableContainer component={Paper}>
-                      <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                        <TableHead>
-                          <TableRow>
-                            <TableCell>#&nbsp;Apto</TableCell>
-                            <TableCell align="right">Estado</TableCell>
-                            <TableCell align="center">m2</TableCell>
-                            <TableCell align="right">Alcobas</TableCell>
-                            <TableCell align="right">Baños</TableCell>
-                            <TableCell align="right">Cocina</TableCell>
-                            <TableCell align="right">
-                              Sala&nbsp;Comedor
+                  ver Mas
+                </Button>
+              </div>
+              <Dialog
+                open={openTipo5}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={handleCloseTipo5}
+                aria-describedby="alert-dialog-slide-description"
+              >
+                <CardMedia
+                  component="img"
+                  sx={{
+                    width: 580,
+                    height: 800,
+                    objectFit: "fill",
+                    marginTop: 0,
+                    marginLeft: 0,
+                  }}
+                  image={TIPO5}
+                  alt="img"
+                />
+                <CardMedia
+                  component="video"
+                  image={video}
+                  controls
+                  className="videoTipo1"
+                />
+                <br />
+                <hr />
+                <DialogTitle>{"Apartamentos Tipo 5"}</DialogTitle>
+                <DialogActions>
+                  <TableContainer component={Paper}>
+                    <Table sx={{ minWidth: 650 }} aria-label="simple table">
+                      <TableHead>
+                        <TableRow>
+                          <TableCell>#&nbsp;Apto</TableCell>
+                          <TableCell align="right">Estado</TableCell>
+                          <TableCell align="center">m2</TableCell>
+                          <TableCell align="right">Alcobas</TableCell>
+                          <TableCell align="right">Baños</TableCell>
+                          <TableCell align="right">Cocina</TableCell>
+                          <TableCell align="right">Sala&nbsp;Comedor</TableCell>
+                          <TableCell align="right">Area&nbsp;Ropas</TableCell>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rowsTipo5.map((row) => (
+                          <TableRow
+                            key={row.name}
+                            sx={{
+                              "&:last-child td, &:last-child th": {
+                                border: 0,
+                              },
+                            }}
+                          >
+                            <TableCell component="th" scope="row">
+                              {row.name}
                             </TableCell>
-                            <TableCell align="right">Area&nbsp;Ropas</TableCell>
+                            <TableCell align="center">
+                              {row.disponible}
+                            </TableCell>
+                            <TableCell align="center">{row.m2}</TableCell>
+                            <TableCell align="center">{row.alcobas}</TableCell>
+                            <TableCell align="center">{row.baños}</TableCell>
+                            <TableCell align="center">{row.cocina}</TableCell>
+                            <TableCell align="center">
+                              {row.salaComedor}
+                            </TableCell>
+                            <TableCell align="center">{row.areaRopa}</TableCell>
                           </TableRow>
-                        </TableHead>
-                        <TableBody>
-                          {rowsTipo5.map((row) => (
-                            <TableRow
-                              key={row.name}
-                              sx={{
-                                "&:last-child td, &:last-child th": {
-                                  border: 0,
-                                },
-                              }}
-                            >
-                              <TableCell component="th" scope="row">
-                                {row.name}
-                              </TableCell>
-                              <TableCell align="center">
-                                {row.disponible}
-                              </TableCell>
-                              <TableCell align="center">{row.m2}</TableCell>
-                              <TableCell align="center">
-                                {row.alcobas}
-                              </TableCell>
-                              <TableCell align="center">{row.baños}</TableCell>
-                              <TableCell align="center">{row.cocina}</TableCell>
-                              <TableCell align="center">
-                                {row.salaComedor}
-                              </TableCell>
-                              <TableCell align="center">
-                                {row.areaRopa}
-                              </TableCell>
-                            </TableRow>
-                          ))}
-                        </TableBody>
-                      </Table>
-                    </TableContainer>
-                  </DialogActions>
-                  <Button sx={{margin: 1}} variant="contained" onClick={handleCloseTipo5}>Cerrar</Button>
-                </Dialog>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </DialogActions>
+                <Button
+                  sx={{ margin: 1 }}
+                  variant="contained"
+                  onClick={handleCloseTipo5}
+                >
+                  Cerrar
+                </Button>
+              </Dialog>
             </div>
           </div>
         </div>
@@ -908,7 +950,7 @@ function Home() {
                     objectFit: "fill",
                     marginTop: -10,
                     marginLeft: 0,
-                    marginBottom: -12
+                    marginBottom: -12,
                   }}
                   image={APTOS}
                   alt="img"
@@ -926,7 +968,7 @@ function Home() {
                     <Table sx={{ minWidth: 550 }} aria-label="simple table">
                       <TableHead>
                         <TableRow>
-                          <TableCell align="center" >Numero&nbsp;Apto</TableCell>
+                          <TableCell align="center">Numero&nbsp;Apto</TableCell>
                           <TableCell align="center">Estado</TableCell>
                           <TableCell align="center">Tamaño</TableCell>
                         </TableRow>
@@ -939,7 +981,11 @@ function Home() {
                               "&:last-child td, &:last-child th": { border: 0 },
                             }}
                           >
-                            <TableCell align="center" component="th" scope="row">
+                            <TableCell
+                              align="center"
+                              component="th"
+                              scope="row"
+                            >
                               {row.name}
                             </TableCell>
                             <TableCell align="center">
@@ -952,13 +998,23 @@ function Home() {
                     </Table>
                   </TableContainer>
                 </DialogActions>
-                <Button sx={{margin: 1}} variant="contained" onClick={handleCloseApartamentos}>Cerrar</Button>
+                <Button
+                  sx={{ margin: 1 }}
+                  variant="contained"
+                  onClick={handleCloseApartamentos}
+                >
+                  Cerrar
+                </Button>
               </Dialog>
             </div>
           </div>
         </div>
       </div>
       {/* ----------------------------------------------------------------------------------------------------------------------> */}
+
+      <div className="titleContainerOrigin3">
+        <span className="titleOrigin3"> Galeria</span>
+      </div>
 
       <div className="position">
         <div className="carousel-wrapperHome">
