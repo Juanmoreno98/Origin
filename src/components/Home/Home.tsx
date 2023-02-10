@@ -412,11 +412,20 @@ function Home() {
                 <CardMedia
                   component="img"
                   sx={{
-                    width: 480,
+                    width: {
+                      xs: 300,
+                      sm: 580,
+                      md: 600,
+                      lg: 480,
+                      xl: 480
+                    },
                     height: 800,
                     objectFit: "fill",
                     marginTop: 0,
-                    marginLeft: 7,
+                    marginLeft: {
+                      xs: 1,
+                      lg: 7
+                    },
                   }}
                   image={TIPO1}
                   alt="img"
@@ -519,11 +528,23 @@ function Home() {
                 <CardMedia
                   component="img"
                   sx={{
-                    width: 560,
+                    width: {
+                      xs: 300,
+                      sm: 580,
+                      md: 600,
+                      lg: 520,
+                      xl: 520
+                    },
                     height: 800,
                     objectFit: "fill",
-                    marginTop: -5,
-                    marginLeft: -1,
+                    marginTop: {
+                      xs: -2,
+                      lg: -4
+                    },
+                    marginLeft: {
+                      xs: 0,
+                      lg: 3,
+                    },
                   }}
                   image={TIPO2}
                   alt="img"
@@ -624,11 +645,23 @@ function Home() {
                 <CardMedia
                   component="img"
                   sx={{
-                    width: 450,
+                    width: {
+                      xs: 310,
+                      sm: 580,
+                      md: 580,
+                      lg: 475,
+                      xl: 520
+                    },
                     height: 800,
                     objectFit: "fill",
                     marginTop: 0,
-                    marginLeft: 8,
+                    marginLeft: {
+                      xs: 0,
+                      sm: 1,
+                      md: 1,
+                      lg: 8,
+                      xl: 8
+                    },
                   }}
                   image={TIPO3}
                   alt="img"
@@ -730,7 +763,13 @@ function Home() {
                 <CardMedia
                   component="img"
                   sx={{
-                    width: 580,
+                    width: {
+                      xs: 300,
+                      sm: 580,
+                      md: 580,
+                      lg: 580,
+                      xl: 580
+                    },
                     height: 800,
                     objectFit: "fill",
                     marginTop: 0,
@@ -838,7 +877,13 @@ function Home() {
                 <CardMedia
                   component="img"
                   sx={{
-                    width: 580,
+                    width: {
+                      xs: 300,
+                      sm: 580,
+                      md: 580,
+                      lg: 580,
+                      xl: 520
+                    },
                     height: 800,
                     objectFit: "fill",
                     marginTop: 0,
@@ -945,12 +990,30 @@ function Home() {
                 <CardMedia
                   component="img"
                   sx={{
-                    width: 600,
+                    width: {
+                      xs: 320,
+                      sm: 580,
+                      md: 600,
+                      lg: 600,
+                      xl: 600
+                    },
                     height: 800,
                     objectFit: "fill",
-                    marginTop: -10,
+                    marginTop: {
+                      xs: -4,
+                      sm: -5,
+                      md: -5,
+                      lg: -10,
+                      xl: -10
+                    },
                     marginLeft: 0,
-                    marginBottom: -12,
+                    marginBottom: {
+                      xs: -5,
+                      sm: -5,
+                      md: -8,
+                      lg: -12,
+                      xl: -12
+                    },
                   }}
                   image={APTOS}
                   alt="img"
