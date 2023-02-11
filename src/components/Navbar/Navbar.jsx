@@ -1,5 +1,6 @@
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography"
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { alpha, styled } from "@mui/material/styles";
@@ -7,7 +8,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
-
+import logo from "../assets/originlogo.jpg"
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -68,6 +69,9 @@ function Navbar() {
   const handleNavigateOrigin2 = () => {
     navigate("/projects/Origin2");
   };
+  const handleNavigateOrigin3 = () => {
+    navigate("/projects/Origin3");
+  };
   const handleGoHome = () => {
     navigate("/");
   };
@@ -90,11 +94,12 @@ function Navbar() {
           </div>
         </div>
 
-        <Box sx={{display: 'flex',justifyContent:"end",fontFamily:"Segoe UI Symbol"}}>
+        <Box sx={{ display: 'flex', justifyContent: "end", fontFamily: "Segoe UI Symbol" }}>
           <Button sx={{ color: "#fff" }} onClick={handleGoHome}>
-            Inicio
+            <Typography variant="h5" fontFamily="Montserrat" >         Inicio</Typography>
+
           </Button>
-         
+
 
           <Button
             id="demo-customized-button"
@@ -106,7 +111,8 @@ function Navbar() {
             onClick={handleClick}
             endIcon={<KeyboardArrowDownIcon />}
           >
-            Proyectos
+            <Typography variant="h5" fontFamily="Montserrat">    Proyectos</Typography>
+
           </Button>
           <StyledMenu
             id="demo-customized-menu"
@@ -116,25 +122,34 @@ function Navbar() {
             anchorEl={anchorEl}
             open={open}
             onClose={handleClose}
-          >
-            <MenuItem onClick={handleNavigateOrigin1} disableRipple>
-            
-              Origin 1
+          >      <MenuItem onClick={handleNavigateOrigin3} disableRipple>
+              <Typography fontFamily="Montserrat" > Origin 3</Typography>
+
+
+
+
             </MenuItem>
             <MenuItem onClick={handleNavigateOrigin2} disableRipple>
-         
-              Origin 2
-            </MenuItem>
-          </StyledMenu>
-        <Button sx={{ color: "#fff" }}>Sobre nosotros</Button>
-        </Box>
-        <div class="textos">
-          <div class="titulo">ORIGIN HOLDINGS S.A.S</div>
-          <h2 class="cel-inactive">
-            No se puede cargar la pagina en este tamaño de pantalla
-          </h2>
+              <Typography fontFamily="Montserrat" >Origin 2</Typography>
 
-          <div class="subtitulo">La mejor empresa constructora de Colombia</div>
+            </MenuItem>
+            <MenuItem onClick={handleNavigateOrigin1} disableRipple>
+              <Typography fontFamily="Montserrat" >Origin 1</Typography>
+
+            </MenuItem>
+
+
+          </StyledMenu>
+          <Button sx={{ color: "#fff" }}>
+            <Typography variant="h5" fontFamily="Montserrat" >Sobre nosotros</Typography></Button>
+        </Box>
+        <div class="gridNav">
+
+          <img class="logoNavbar" src={logo} alt="logo" />
+          <div class="titulo">ORIGIN HOLDINGS S.A.S</div>
+
+
+
         </div>
       </header>
     </>

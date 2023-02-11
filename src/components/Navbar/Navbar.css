@@ -94,7 +94,26 @@ flex-direction: row;
 }
 
 /* ------------------------Navegacion------------------------ */
-
+.logoNavbar{
+  border-radius: 50%;
+  width:10%;
+ margin-left: 15px;
+ margin-top: -15px;
+ 
+}
+.titulo {
+  font-size:40px;
+  color: var(--titulo);
+  font-family: var(--fuente);
+    margin-left: -800px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.gridNav{
+  margin-top: -10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
 .navegacion {
   width: 100%;
   height: 50px;
@@ -193,12 +212,7 @@ flex-direction: row;
   animation-timing-function: ease;
 }
 
-.titulo {
-  font-size:30px;
-  color: var(--titulo);
-  font-family: var(--fuente);
-  margin-left: 45px;
-}
+
 
 .subtitulo {
   font-size: 15px;
