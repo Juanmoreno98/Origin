@@ -36,11 +36,6 @@ function Origin1() {
 
 	<p className="originBackBarOrigin1"></p>
 		  <div className="containerCarouselOrigin2Beta">
-		<div>
-
-		  <img className="frontBuildOrigin1" src={imgCarousel1} alt="" />
-		</div>
-<div className="ContainerTextOrigin1">
 			<div className="textOrigin1">
 			<p className="pTextOrigin1">Dirección:</p>Carrera 32 1D-33. Bogota
 			&nbsp;

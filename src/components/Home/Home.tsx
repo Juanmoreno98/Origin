@@ -31,7 +31,7 @@ function Home() {
                 <h2 className="recipe-title">Origin Holdings S.A.S</h2>
                 <div className="user-rating"></div>
               </div>
-              <ul className="recipe-details">
+              {/* <ul className="recipe-details">
                 <li className="recipe-details-item time">
                   <i className="ion ion-ios-clock-outline"></i>
                   <span className="value">2016</span>
@@ -47,25 +47,23 @@ function Home() {
                   <span className="value">3</span>
                   <span className="title">Estrato</span>
                 </li>
-              </ul>
+              </ul> */}
             </header>
             <p className="description">
-              Somos una constructora que se caracteriza por manejar excelentes
-              acabados manejamos excelentes precios, nos gustaria que hcieras
-              parte de nosotros....
+             Nit. 9007589604 es una empresa privada dedicada a la construcción de inmuebles y prestación de servicios inmobiliarios como son venta, arriendo y adecuación de inmuebles. Surgió bajo una iniciativa de emprendimiento familiar que pretende brindar condiciones optimas de vivienda para población de estratos medios, en donde prime la calidad, el buen gusto y costos asequibles que les permita a los compradores acceso a una vivienda digna ubicada en excelentes sectores de la ciudad.
             </p>
             <footer className="content__footer">
-              <a href="#">Nosotros</a>
+              <a href="#">Mas Sobre Nosotros</a>
             </footer>
           </div>
         </div>
-
+        
         <title>Recipe Card Food</title>
         <div className="bodyHomePrueba">
           <div className="container">
             <img src={APTOS2} alt="FachacdaOrigin3 " />
             <div className="container__text">
-              <h1>Conoce Nuestro Ultimo Proyecto</h1>
+              <h1>Conoce Nuestro Nuevo Proyecto</h1>
               <div className="container__text__star">
                 <span className="fa fa-star checked"></span>
                 <span className="fa fa-star checked"></span>
@@ -74,10 +72,11 @@ function Home() {
                 <span className="fa fa-star checked"></span>
               </div>
               <p>
-                Origin III es el ultimo proyecto que tenemos en desarrollo en la localidad de Puente aranda
-                ,consta de 5 pisos con un total de x apartamentos
+                <h4>Edificio Origin III</h4>
+                <hr />
+                Es un proyecto de apartamentos y aparta estudios ubicado en el Barrio Soledad Norte en la localidad de Engativá (Bogota)
               </p>
-              <div className="container__text__timing">
+              {/* <div className="container__text__timing">
                 <div className="container__text__timing_time">
                   <h2>Pisos</h2>
                   <p>5</p>
@@ -89,16 +88,21 @@ function Home() {
                 <div className="container__text__timing_time">
                   <h2>Apartamentos Tipo</h2>
                   <p>5</p>
-                </div>
-              </div>
+                  </div>
+                </div> */}
               <button className="btn">
                 Ver Mas... <i className="fa fa-arrow-right"></i>
               </button>
             </div>
           </div>
+                <div className="constructor">
+                  <h2 className="slideTitle">Sitios De Interes</h2>
+                  <hr />
+                </div>
         </div>
 
-        <div className="sectionHome2">
+
+        
           <div className="containerHome2">
             <div className="carouselHome2">
               <input type="radio" name="slides" id="slide-1" />
@@ -114,12 +118,11 @@ function Home() {
                       <img src={img1} alt="" />
                     </div>
                     <figcaption>
-                      Es un sector de fácil acceso; el barrio está rodeado por
-                      importantes vías principales como la Avenida Ciudad de
-                      Cali, la calle 80 y la calle 72.
-                      <span className="credit2">
-                        Localidad de Puente Aranda
-                      </span>
+                    Edificio Origin III se localiza al noroccidente de la Ciudad De Bogota, excelente ubicación y  en un sector de fácil acceso rodeado por importantes vías como son la Avenida Ciudad de Cali, Calle 80, Av. Boyacá y la Calle 72.
+                      <h4>
+                    <hr />
+                        Centro Comercial Titan Plaza
+                      </h4>
                     </figcaption>
                   </figure>
                 </li>
@@ -227,33 +230,74 @@ function Home() {
                 </li>
               </ul>
             </div>
-          </div>
-        </div>
+        
 
-        <div className="prueba">
+        {/* <div className="prueba">
           <img className="imgprueba" src={imgFachada} alt="" />
           <h1 className="titulo3">ORIGIN III</h1>
+        </div> */}
+      </div>
+      </div>
+
+      <div className="section2">
+        <div className="contentTitleSec2" >
+          <h1>Proyectos Desarrollados</h1>
         </div>
-      </div>
-
-      <h1 className="titulo2">PROYECTOS</h1>
-      <div className="aaa">
-      <h1 className="titulo2">Origin I</h1>
-      <h1 className="titulo2">Origin II</h1>
-      </div>
-
-
-
-      <div className="position">
-        <div className="carousel-wrapperHome">
-          <div className="carousel-containerHome">
-            <div className="carousel2">
+        <div className="carousel-wrapperHome9">
+          <div className="carousel-containerHome9">
+            <div className="carousel29">
               <div className="image-one1"></div>
               <div className="image-two1"></div>
               <div className="image-three1"></div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="section3" >
+        <div className="section3a">
+        <div className="bodyHomePrueba">
+          <div className="containerSection3">
+            <img src={APTOS2} alt="FachacdaOrigin3 " />
+            <div className="container__text2">
+              <h1>ORIGIN I</h1>
+              <hr />
+              <button className="btn2">
+                Ver Mas... <i className="fa fa-arrow-right2"></i>
+              </button>
+            </div>
+          </div>
+
+       </div>
+
+       <div className="bodyHomePrueba">
+          <div className="containerSection3">
+            <img src={APTOS2} alt="FachacdaOrigin3 " />
+            <div className="container__text2">
+              <h1>ORIGIN II</h1>
+              <hr />
+              <button className="btn2">
+                Ver Mas... <i className="fa fa-arrow-right2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      {/* <div className="constructor2">
+
+      </div> */}
+
+      {/* <div className="position">
+        <div className="carousel-wrapperHome9">
+          <div className="carousel-containerHome9">
+            <div className="carousel29">
+              <div className="image-one1"></div>
+              <div className="image-two1"></div>
+              <div className="image-three1"></div>
+            </div>
+          </div>
+        </div>
+
         <div className="carousel-wrapperHome">
           <div className="carousel-containerHome">
             <div className="carousel2">
@@ -263,7 +307,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Footer />
       <ContactUs />
