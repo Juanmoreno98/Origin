@@ -21,7 +21,7 @@ function Origin1() {
 	<p className="originBackBar"></p>
 		  <div className="containerCarouselOrigin2Beta">
 			<div>
-			  <div className="container">
+			  <div className="container3">
 				<div className="row full-height justify-content-center">
 				  <div className="ColumnsCarouselOrigin2">
 					<div className="section mx-auto text-center slider-height-padding">
