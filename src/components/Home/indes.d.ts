@@ -6,5 +6,7 @@ declare module '*.JPG';
 declare module '*.mp4';
 declare module '*.jsx';
 declare module '*.png';
+declare module '*.avif';
+
 
 
