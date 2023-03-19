@@ -3,12 +3,14 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography"
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import { alpha, styled } from "@mui/material/styles";
+import { alpha, createTheme, styled } from "@mui/material/styles";
+import Maindra from '../../fonts/Maiandra GD Regular.ttf'
 import { Box } from "@mui/system";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/originlogo.jpg"
+import CssBaseline from '@mui/material/CssBaseline';
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
@@ -51,7 +53,18 @@ const StyledMenu = styled((props) => (
     },
   },
 }));
-
+const theme = createTheme({
+  typography: {
+    fontFamily: ['"Open Sans"', 'TitilliumWeb', 'Roboto'].join(','),
+   },
+   overrides: {
+    MuiCssBaseline: {
+      '@global': {
+        '@font-face': [Maindra],
+      },
+    }
+  }
+ })
 function Navbar() {
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -79,24 +92,14 @@ function Navbar() {
   return (
     <>
       <header className="header">
-        <div class="wave">
-          <div class="wave2">
-            <svg
-              viewBox="0 0 500 150"
-              preserveAspectRatio="none"
-              className="svg"
-            >
-              <path
-                d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                className="path"
-              ></path>
-            </svg>
-          </div>
-        </div>
-
-        <Box sx={{ display: 'flex', justifyContent: "end", fontFamily: "Segoe UI Symbol" }}>
-          <Button sx={{ color: "#fff" }} onClick={handleGoHome}>
-            <Typography variant="h5" fontFamily="Montserrat" >         Inicio</Typography>
+      <CssBaseline />
+          <img class="logoNavbar" src={logo} alt="logo" />
+          <div class="titulo">ORIGIN HOLDINGS S.A.S</div>
+        <Box sx={{ alignSelf:'start', justifySelf: "end", fontFamily: "Segoe UI Symbol" }}>
+          <Button sx={{ color: "#fff" , ":hover":{
+             color: "#FFB200"
+          } }}  theme={theme} onClick={handleGoHome}>
+            <Typography variant="h5"  >         INICIO</Typography>
 
           </Button>
 
@@ -106,12 +109,14 @@ function Navbar() {
             aria-controls={open ? "demo-customized-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
-            sx={{ color: "#fff" }}
+            sx={{ color: "#fff" , ":hover":{
+              color: "#FFB200"
+           } }}
             disableElevation
             onClick={handleClick}
             endIcon={<KeyboardArrowDownIcon />}
           >
-            <Typography variant="h5" fontFamily="Montserrat">    Proyectos</Typography>
+            <Typography variant="h5" >    PROYECTOS</Typography>
 
           </Button>
           <StyledMenu
@@ -123,34 +128,33 @@ function Navbar() {
             open={open}
             onClose={handleClose}
           >      <MenuItem onClick={handleNavigateOrigin3} disableRipple>
-              <Typography fontFamily="Montserrat" > Origin 3</Typography>
+              <Typography  > ORIGIN 3</Typography>
 
 
 
 
             </MenuItem>
             <MenuItem onClick={handleNavigateOrigin2} disableRipple>
-              <Typography fontFamily="Montserrat" >Origin 2</Typography>
+              <Typography  >ORIGIN 2</Typography>
 
             </MenuItem>
             <MenuItem onClick={handleNavigateOrigin1} disableRipple>
-              <Typography fontFamily="Montserrat" >Origin 1</Typography>
+              <Typography  >ORIGIN 1</Typography>
 
             </MenuItem>
 
 
           </StyledMenu>
-          <Button sx={{ color: "#fff" }}>
-            <Typography variant="h5" fontFamily="Montserrat" >Sobre nosotros</Typography></Button>
+          <Button   sx={{ color: "#fff" , ":hover":{
+             color: "#FFB200"
+          } }}>
+            <Typography variant="h5"  >SOBRE NOSOTROS</Typography></Button>
+            <Button   sx={{ color: "#fff" , ":hover":{
+             color: "#FFB200"
+          } }}>
+            <Typography variant="h5"  >CONTÁCTENOS</Typography></Button>
         </Box>
-        <div class="gridNav">
-
-          <img class="logoNavbar" src={logo} alt="logo" />
-          <div class="titulo">ORIGIN HOLDINGS S.A.S</div>
-
-
-
-        </div>
+   
       </header>
     </>
   );
