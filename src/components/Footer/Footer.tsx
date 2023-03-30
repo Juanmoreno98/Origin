@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
-import logo from "../assets/originlogo.jpg";
+import logo from "../assets/LOGOCOLOR.png";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import "./Footer.css";
 import prueba from "../assets/imagen8.png";
@@ -14,7 +14,6 @@ function Footer() {
       <footer className="bodyFooter">
         <div className="containerLogo">
           <img className="imgLogo" src={logo} alt="" />
-          <h3 className="titleFooter">Origin Holdings S.A.S</h3>
         </div>
 
         <hr className="hrVertical"></hr>

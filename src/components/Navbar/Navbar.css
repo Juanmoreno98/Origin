@@ -59,9 +59,10 @@
 
 /* ------------------------Navegacion------------------------ */
 .logoNavbar {
-  border-radius: 50%;
-  width: 70%;
+  width: 15rem;
+  height: 10rem;
   align-self: center;
+  justify-self: start;
 }
 .titulo {
   font-size: 40px;
@@ -99,13 +100,6 @@
   animation-duration: 2s;
   -webkit-animation-timing-function: ease;
   animation-timing-function: ease;
-}
-
-.subtitulo {
-  font-size: 15px;
-  color: var(--subtitulos);
-  font-family: var(--fuente);
-  margin-left: 60px;
 }
 
 /* --------------------------------------WAVE-------------------------------------- */
@@ -162,7 +156,6 @@
   -ms-flex-align: center;
   align-items: center;
   margin-top: 50px;
-  margin-left: 40px;
 }
 
 .parrafo-origin > p {

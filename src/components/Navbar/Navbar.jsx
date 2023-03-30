@@ -9,7 +9,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/originlogo.jpg"
+import logo from "../assets/LOGOborde.png"
 import CssBaseline from '@mui/material/CssBaseline';
 const StyledMenu = styled((props) => (
   <Menu
