@@ -2,15 +2,17 @@ import React from "react";
 import ContactUs from "../ContactUs/ContactUs.tsx";
 import Footer from "../Footer/Footer.tsx";
 import Navbar from "../Navbar/Navbar.jsx";
-import titanPlaza from "../../img/Tiatan_Plaza.jpg";
+// import titanPlaza from "../../img/Tiatan_Plaza.jpg";
+import titanPlaza from "../../img/titan2.jpg";
 import lago from "../../img/Santa_maria_del_lago.jpeg";
 import trasmi from "../../img/Estacion_Avenida_Cali.jpg";
 import puentearanda from "../../img/Loclidad Puente Aranda.avif";
 import imgFachada from "../../img/Fachada3_Origin3.jpg";
 import imgHome from "../../img/imgHome.jpg";
 import APTOS2 from "../../img/FACH2.png";
+import FachadaFinal from "../../img/FACHADA FRONTAL.png";
 import PeopleOutlineOutlinedIcon from "@mui/icons-material/PeopleOutlineOutlined";
-import ApartmentIcon from '@mui/icons-material/Apartment';
+import ApartmentIcon from "../../img/IconEdificio.png";
 import "./home.css";
 
 function Home() {
@@ -41,19 +43,23 @@ function Home() {
               </div>
             </header>
             <p className="description">
-              Nit. 9007589604 es una empresa privada dedicada a la construcción
-              de inmuebles y prestación de servicios inmobiliarios como son
-              venta, arriendo y adecuación de inmuebles. Surgió bajo una
-              iniciativa de emprendimiento familiar que pretende brindar
-              condiciones optimas de vivienda para población de estratos medios,
-              en donde prime la calidad, el buen gusto y costos asequibles que
-              les permita a los compradores acceso a una vivienda digna ubicada
-              en excelentes sectores de la ciudad.
+              Nit. 9007589604
+              <br />
+              Somos una empresa privada dedicada a la construcción de inmuebles
+              y prestación de servicios inmobiliarios como son venta, arriendo y
+              adecuación de inmuebles. Surgió bajo una iniciativa de
+              emprendimiento familiar que pretende brindar viviendas con
+              condiciones óptimas en estratos medios, donde prima la calidad, el
+              buen gusto y costos asequibles en excelentes sectores de la
+              ciudad.
             </p>
             <div className="buttonNosotrosPosition">
               <button className="buttonNosotros">
                 Nosotros{" "}
-                <PeopleOutlineOutlinedIcon className="iconB"></PeopleOutlineOutlinedIcon>
+                <PeopleOutlineOutlinedIcon
+                  sx={{ mb: -1 }}
+                  className="iconB"
+                ></PeopleOutlineOutlinedIcon>
               </button>
             </div>
           </div>
@@ -62,18 +68,20 @@ function Home() {
         <title>Nosotros</title>
         <div className="container">
           <div className="container__text">
-            <h1>Conoce Nuestro Ultimo Proyecto</h1>
+            <h1>Conoce nuestro nuevo proyecto</h1>
             <div className="positionContainer">
-              <img src={APTOS2} alt="FachacdaOrigin3 " />
+              <img src={FachadaFinal} alt="FachacdaOrigin3 " />
               <p>
                 <h4>Edificio Origin III</h4>
-                Es un proyecto de apartamentos y aparta estudios ubicado en el
-                Barrio Soledad Norte en la localidad de Engativá (Bogota)
+                Es un proyecto de apartamentos y apartaestudios desde 23.3m2
+                hasta 61.7m2 de área privada. <br />
+                <b>Dirección:</b> Calle 77a #83-31/39 <br />
+                <b>Barrio:</b> Soledad Norte
+                <br />
+                <b>Localidad:</b> Engativá (Bogotá)
               </p>
             </div>
-            <button className="btn">
-              Ver Mas... <i className="fa fa-arrow-right"></i>
-            </button>
+            <button className="btn">Ver Mas</button>
           </div>
         </div>
         {/*  SLIDERS DE UBICACIONES OCULTO --------------------------->
@@ -210,19 +218,16 @@ function Home() {
 
       <div className="positionCarouselAuto">
         <div className="contentCarousel">
+          <p>
+            <b>Edificio Origin III</b> se localiza al noroccidente de la Ciudad
+            De Bogotá, excelente ubicación y en un sector de fácil acceso
+            rodeado por importantes vías como:
+          </p>
           <ul>
-            <li>
-              Edificio <b>Origin III</b> se localiza al noroccidente de la
-              Ciudad De Bogota, excelente ubicación y en un sector de fácil
-              acceso rodeado por importantes vías como:{" "}
-              <b>
-                La Avenida Ciudad de Cali, Calle 80, Av. Boyacá y la Calle 72.
-              </b>
-            </li>
-            <li>
-              Esta rodeado de lugares como el{" "}
-              <b>C.C Titan Plaza y el Humedal Santa Maria Del Lago</b>
-            </li>
+            <li>La Avenida Ciudad de Cali</li>
+            <li>Calle 80</li>
+            <li>Av. Boyacá</li>
+            <li>Calle 72.</li>
           </ul>
         </div>
         <div className="slider2">
@@ -242,44 +247,41 @@ function Home() {
           </ul>
         </div>
       </div>
-      
-      <div className="dividerBlue" >
-        <h1>
-          CONOCE NUESTROS
-        </h1>
+
+      <div className="dividerBlue">
+        <h1>CONOCE NUESTROS</h1>
       </div>
 
-      <div className="titleProyects" >
-        <h1>
-          PROYECTOS 
-        </h1>
-        <ApartmentIcon sx={{ fontSize: "6rem", color: "#066699" }}></ApartmentIcon>
+      <div className="titleProyects">
+        <h1>PROYECTOS</h1>
+        <img src={ApartmentIcon} alt="icon" />
       </div>
 
       <div className="allProjects">
-      
         <div className="imagesProjects">
-        <hr />
-        <hr className="hrYellow" />
+          <hr />
+          <hr className="hrYellow" />
           <img src={imgFachada} alt="" />
           <h1>ORIGIN I</h1>
         </div>
         <div className="imagesProjects">
           <img src={imgHome} alt="" />
           <h1>ORIGIN II</h1>
-        <hr  className="hrblue"/>
+          <hr className="hrblue" />
         </div>
         <div className="imagesProjects">
-        <hr className="hrYellow" />  
+          <hr className="hrYellow" />
           <img src={APTOS2} alt="" />
-          <h1> ORIGIN III <p>(En proceso)</p></h1>
+          <h1>
+            {" "}
+            ORIGIN III <p>(En proceso)</p>
+          </h1>
         </div>
       </div>
 
-        <div className="decoration" >
-          <div className="decoration2">
-          </div>
-        </div>
+      <div className="decoration">
+        <div className="decoration2"></div>
+      </div>
 
       <Footer />
       <ContactUs />
