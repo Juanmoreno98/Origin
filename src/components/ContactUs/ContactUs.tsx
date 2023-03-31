@@ -7,7 +7,7 @@ function ContactUs() {
   return (
     <div>
 <div className="floating-container">
-  <div className="floating-button">Contactenos!</div>
+  <div className="floating-button">SoloIconWhp</div>
   <div className="element-container">
 
 
