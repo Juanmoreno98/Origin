@@ -17,18 +17,18 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 
-import img4 from "../../../img/aeropuerto_el_dorado.jpg";
 import APTOS from "../../../img/APTOS.png";
 import TIPO1 from "../../../img/Apto_Tipo1.JPG";
 import TIPO2 from "../../../img/Apto_Tipo2.JPG";
 import TIPO3 from "../../../img/Apto_Tipo3.JPG";
 import TIPO4 from "../../../img/Apto_Tipo4.JPG";
 import TIPO5 from "../../../img/Apto_Tipo5.JPG";
-import img6 from "../../../img/Clinica_Santa_Maria_Del_Lago.jpg";
-import img3 from "../../../img/Estacion_Avenida_Cali.jpg";
 import img1 from "../../../img/La-Soledad-Norte.jpg";
 import img2 from "../../../img/Santa_maria_del_lago.jpeg";
+import img3 from "../../../img/Estacion_Avenida_Cali.jpg";
+import img4 from "../../../img/aeropuerto_el_dorado.jpg";
 import img5 from "../../../img/Tiatan_Plaza.jpg";
+import img6 from "../../../img/Clinica_Santa_Maria_Del_Lago.jpg";
 import ContactUs from "../../ContactUs/ContactUs.tsx";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
@@ -203,7 +203,8 @@ function Home() {
       <Navbar></Navbar>
 
       <div className="banner">
-      <span className="code">CONOCE NUESTRO ULTIMO PROYECTO</span> <br /> DESLIZA HACIA ABAJO
+        <span className="code">CONOCE NUESTRO ULTIMO PROYECTO</span> <br />{" "}
+        DESLIZA HACIA ABAJO
       </div>
 
       <div className="titleContainerOrigin3">
@@ -370,14 +371,11 @@ function Home() {
         <br />
       </div>
 
-      
-      
-  
-{/* -------------------------------------------------------------------------------------------------------------------->>>>>>>>> */}
-<div className="titleContainerOrigin3">
+      {/* -------------------------------------------------------------------------------------------------------------------->>>>>>>>> */}
+      <div className="titleContainerOrigin3">
         <span className="titleOrigin3"> Planos</span>
       </div>
-      
+
       <div className="content-wrapper">
         <div className="news-card">
           <a className="news-card__card-link"></a>
@@ -417,14 +415,14 @@ function Home() {
                       sm: 580,
                       md: 600,
                       lg: 480,
-                      xl: 480
+                      xl: 480,
                     },
                     height: 800,
                     objectFit: "fill",
                     marginTop: 0,
                     marginLeft: {
                       xs: 1,
-                      lg: 7
+                      lg: 7,
                     },
                   }}
                   image={TIPO1}
@@ -533,13 +531,13 @@ function Home() {
                       sm: 580,
                       md: 600,
                       lg: 520,
-                      xl: 520
+                      xl: 520,
                     },
                     height: 800,
                     objectFit: "fill",
                     marginTop: {
                       xs: -2,
-                      lg: -4
+                      lg: -4,
                     },
                     marginLeft: {
                       xs: 0,
@@ -650,7 +648,7 @@ function Home() {
                       sm: 580,
                       md: 580,
                       lg: 475,
-                      xl: 520
+                      xl: 520,
                     },
                     height: 800,
                     objectFit: "fill",
@@ -660,7 +658,7 @@ function Home() {
                       sm: 1,
                       md: 1,
                       lg: 8,
-                      xl: 8
+                      xl: 8,
                     },
                   }}
                   image={TIPO3}
@@ -768,7 +766,7 @@ function Home() {
                       sm: 580,
                       md: 580,
                       lg: 580,
-                      xl: 580
+                      xl: 580,
                     },
                     height: 800,
                     objectFit: "fill",
@@ -882,7 +880,7 @@ function Home() {
                       sm: 580,
                       md: 580,
                       lg: 580,
-                      xl: 520
+                      xl: 520,
                     },
                     height: 800,
                     objectFit: "fill",
@@ -995,7 +993,7 @@ function Home() {
                       sm: 580,
                       md: 600,
                       lg: 600,
-                      xl: 600
+                      xl: 600,
                     },
                     height: 800,
                     objectFit: "fill",
@@ -1004,7 +1002,7 @@ function Home() {
                       sm: -5,
                       md: -5,
                       lg: -10,
-                      xl: -10
+                      xl: -10,
                     },
                     marginLeft: 0,
                     marginBottom: {
@@ -1012,7 +1010,7 @@ function Home() {
                       sm: -5,
                       md: -8,
                       lg: -12,
-                      xl: -12
+                      xl: -12,
                     },
                   }}
                   image={APTOS}
