@@ -18,8 +18,8 @@ import img5 from "../../../img/OriginII/stage_5.jpg";
 import img6 from "../../../img/OriginII/stage_6.jpg";
 import img7 from "../../../img/OriginII/stage_7.jpg";
 import img8 from "../../../img/OriginII/stage_8.jpg";
-import img9 from "../../../img/OriginII/stage_7.jpg";
-import img10 from "../../../img/OriginII/stage_8.jpg";
+import img9 from "../../../img/Apto_Tipo3.JPG";
+import img10 from "../../../img/Apto_Tipo4.JPG";
 import { BsArrowsAngleExpand } from "react-icons/bs";
 import { BsArrowsAngleContract } from "react-icons/bs";
 import { TfiClose } from "react-icons/tfi";
@@ -48,8 +48,6 @@ function Origin2() {
     img6,
     img7,
     img8,
-    img9,
-    img10,
   ]);
   const [x, setX] = useState(false);
 
@@ -71,6 +69,7 @@ function Origin2() {
     setX(false);
     setPhoto(null);
     setIsExpanded(false);
+    document.exitFullscreen();
   };
   const handlePrev = () => {
     let filteredPicture = pictures.find((e) => e === photo);
@@ -273,6 +272,10 @@ function Origin2() {
       <div className={style.timeline}>
         <img src={timeline} alt="timeline" />
       </div>
+
+      <div className={style.prueba}>
+
+   
       <div className={style.galleryContain}>
         <div className={style.gallery}>
           <div className={style.gridTwoPhotos}>
@@ -289,6 +292,8 @@ function Origin2() {
               alt=""
             />
           </div>
+             <div className={style.gridTwoPhotos2}>
+
           <img
             onClick={() => handlePhoto(img3)}
             className={style.img2}
@@ -301,6 +306,7 @@ function Origin2() {
             src={img4}
             alt=""
           />
+            </div>
           <div className={style.gridTwoPhotos2}>
             <img
               onClick={() => handlePhoto(img5)}
@@ -316,36 +322,31 @@ function Origin2() {
             />
           </div>
           <div className={style.gridRowTwoPhotos}>
-            <div className={style.gridThreePhotos}>
+           
               <img
                 onClick={() => handlePhoto(img7)}
                 className={style.img5}
                 src={img7}
                 alt=""
               />
-              <img
+              {/* <img
                 onClick={() => handlePhoto(img8)}
                 className={style.img6}
                 src={img8}
                 alt=""
-              />
-            </div>
+              /> */}
+     
             <img
-              onClick={() => handlePhoto(img9)}
+              onClick={() => handlePhoto(img8)}
               className={style.img7}
-              src={img9}
+              src={img8}
               alt=""
             />
           </div>
-          <img
-            onClick={() => handlePhoto(img10)}
-            className={style.img8}
-            src={img10}
-            alt=""
-          />
+
         </div>
       </div>
-
+      </div>
       <div>
         <div
           className={
