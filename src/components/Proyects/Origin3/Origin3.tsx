@@ -356,7 +356,7 @@ function Home() {
       {/* ------------------------------------------------------------------------------------------------------------------->>>> */}
       {/* google maps  */}
 
-      <div className="titleContainerOrigin3">
+      {/* <div className="titleContainerOrigin3">
         <span className="titleOrigin3"> Ubicacion</span>
       </div>
 
@@ -369,7 +369,7 @@ function Home() {
           ></iframe>
         </div>
         <br />
-      </div>
+      </div> */}
 
       {/* -------------------------------------------------------------------------------------------------------------------->>>>>>>>> */}
       <div className="titleContainerOrigin3">

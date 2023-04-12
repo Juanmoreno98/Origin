@@ -219,10 +219,12 @@ function Origin2() {
 
       <div className={style.ubicacion}>
         <h1 className={style.titleUbicacion}>UBICACION </h1>
+
         <div className={style.map}>
           <iframe
+            title="map"
             className={style.dimesionMap}
-            src="https://www.google.com/maps/d/u/0/embed?mid=12QCNxtQjslEqL8C4n_7foaQHWkVCLNk&ehbc=2E312F"
+            src="https://www.google.com/maps/d/embed?mid=12QCNxtQjslEqL8C4n_7foaQHWkVCLNk&ehbc=2E312F"
           ></iframe>
         </div>
       </div>
@@ -274,55 +276,51 @@ function Origin2() {
       </div>
 
       <div className={style.prueba}>
-
-   
-      <div className={style.galleryContain}>
-        <div className={style.gallery}>
-          <div className={style.gridTwoPhotos}>
-            <img
-              onClick={() => handlePhoto(img1)}
-              className={style.img1}
-              src={img1}
-              alt=""
-            />
-            <img
-              onClick={() => handlePhoto(img2)}
-              className={style.img1}
-              src={img2}
-              alt=""
-            />
-          </div>
-             <div className={style.gridTwoPhotos2}>
-
-          <img
-            onClick={() => handlePhoto(img3)}
-            className={style.img2}
-            src={img3}
-            alt=""
-          />
-          <img
-            onClick={() => handlePhoto(img4)}
-            className={style.img2}
-            src={img4}
-            alt=""
-          />
+        <div className={style.galleryContain}>
+          <div className={style.gallery}>
+            <div className={style.gridTwoPhotos}>
+              <img
+                onClick={() => handlePhoto(img1)}
+                className={style.img1}
+                src={img1}
+                alt=""
+              />
+              <img
+                onClick={() => handlePhoto(img2)}
+                className={style.img1}
+                src={img2}
+                alt=""
+              />
             </div>
-          <div className={style.gridTwoPhotos2}>
-            <img
-              onClick={() => handlePhoto(img5)}
-              className={style.img3}
-              src={img5}
-              alt=""
-            />
-            <img
-              onClick={() => handlePhoto(img6)}
-              className={style.img4}
-              src={img6}
-              alt=""
-            />
-          </div>
-          <div className={style.gridRowTwoPhotos}>
-           
+            <div className={style.gridTwoPhotos2}>
+              <img
+                onClick={() => handlePhoto(img3)}
+                className={style.img2}
+                src={img3}
+                alt=""
+              />
+              <img
+                onClick={() => handlePhoto(img4)}
+                className={style.img2}
+                src={img4}
+                alt=""
+              />
+            </div>
+            <div className={style.gridTwoPhotos2}>
+              <img
+                onClick={() => handlePhoto(img5)}
+                className={style.img3}
+                src={img5}
+                alt=""
+              />
+              <img
+                onClick={() => handlePhoto(img6)}
+                className={style.img4}
+                src={img6}
+                alt=""
+              />
+            </div>
+            <div className={style.gridRowTwoPhotos}>
               <img
                 onClick={() => handlePhoto(img7)}
                 className={style.img5}
@@ -335,17 +333,16 @@ function Origin2() {
                 src={img8}
                 alt=""
               /> */}
-     
-            <img
-              onClick={() => handlePhoto(img8)}
-              className={style.img7}
-              src={img8}
-              alt=""
-            />
-          </div>
 
+              <img
+                onClick={() => handlePhoto(img8)}
+                className={style.img7}
+                src={img8}
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-      </div>
       </div>
       <div>
         <div

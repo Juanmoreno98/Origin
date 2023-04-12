@@ -127,9 +127,9 @@
   margin-bottom: 3rem;
 }
 .gallery {
-width: 95vw;
+  width: 95vw;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 0.3rem;
 }
 .gridTwoPhotos {
@@ -143,7 +143,6 @@ width: 95vw;
   display: grid;
   justify-content: center;
   gap: 0.3rem;
-
 }
 .gridRowTwoPhotos {
   display: grid;
@@ -151,7 +150,6 @@ width: 95vw;
   grid-template-rows: 40% 60%;
 
   gap: 0.3rem;
-
 }
 .gridThreePhotos {
   display: grid;
@@ -188,7 +186,6 @@ width: 95vw;
   height: 100%;
 }
 
-
 /* ----------------------------------------------------------------------------- */
 
 .initialPosition {
@@ -205,16 +202,18 @@ width: 95vw;
   margin-bottom: 5rem;
   height: 80vh;
   width: 100%;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  /* padding-right: 2rem;
+  padding-left: 2rem; */
+  /* border: solid 1px; */
 }
 
 /* ----------------------------------------------------------------- */
 
 .titleInformation {
-  width: 45%;
+  width: 50%;
   height: 100%;
   margin: 0;
+  /* border: solid 1px; */
 }
 
 .principalTitle {
@@ -222,37 +221,38 @@ width: 95vw;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20%;
-  border-radius: 1rem;
-  box-shadow: 2px 2px 10px 5px rgba(255, 166, 0, 0.582);
+  height: 25%;
+  box-shadow: 0px 0px 20px rgba(255, 166, 0, 0.555);
 }
 
 .principalTitle h1 {
   font-family: myFirstFont;
-  font-size: 7rem;
+  font-size: 6rem;
   color: #066699;
+  padding: 2rem;
+  font-weight: 900;
 }
 
 .infoTable {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 80%;
+  /* width: 90%; */
   margin-top: 1rem;
 }
 
 .infoTable img {
-  width: 100%;
+  width: 90%;
 }
 
 /* ----------------------------------------------------------------- */
 
 .sectionHome {
-  width: 45%;
+  width: 50%;
   height: 100%;
   padding: 0;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
+  /* border: solid red 1px; */
 }
 
 .carouselHome {
@@ -533,6 +533,4 @@ width: 95vw;
 .dimesionMap {
   width: 100%;
   height: 100%;
-  border: solid 0.5rem;
-  border-radius: 2rem;
 }
