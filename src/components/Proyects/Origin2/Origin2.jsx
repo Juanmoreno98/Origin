@@ -167,10 +167,12 @@ function Origin2() {
 
       <div className={style.ubicacion}>
         <h1 className={style.titleUbicacion}>UBICACION </h1>
+
         <div className={style.map}>
           <iframe
+            title="map"
             className={style.dimesionMap}
-            src="https://www.google.com/maps/d/u/0/embed?mid=12QCNxtQjslEqL8C4n_7foaQHWkVCLNk&ehbc=2E312F"
+            src="https://www.google.com/maps/d/embed?mid=12QCNxtQjslEqL8C4n_7foaQHWkVCLNk&ehbc=2E312F"
           ></iframe>
         </div>
       </div>
@@ -220,7 +222,6 @@ function Origin2() {
       <div className={style.timeline}>
         <img src={timeline} alt="timeline" />
       </div>
-
       <div className={style.carouselWrapperBuildings}>
         <div className={style.carouselContainerBuildings}>
           <div className={style.carouselBuildings}>
