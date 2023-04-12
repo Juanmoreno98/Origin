@@ -36,58 +36,6 @@ import img8Slider from "../../../img/Origin2_A8.jpg";
 import infoTable from "../../../img/info_table.png";
 
 function Origin2() {
-  const [photo, setPhoto] = useState(null);
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const [pictures, setPictures] = useState([
-    img1,
-    img2,
-    img3,
-    img4,
-    img5,
-    img6,
-    img7,
-    img8,
-  ]);
-  const [x, setX] = useState(false);
-
-  const handlePhoto = (img) => {
-    setX(true);
-    setPhoto(img);
-  };
-  const handleExpand = () => {
-    if (isExpanded === true) {
-      setIsExpanded(!isExpanded);
-      document.exitFullscreen();
-    } else {
-      setIsExpanded(!isExpanded);
-      document.body.requestFullscreen();
-    }
-  };
-
-  const handleClose = () => {
-    setX(false);
-    setPhoto(null);
-    setIsExpanded(false);
-    document.exitFullscreen();
-  };
-  const handlePrev = () => {
-    let filteredPicture = pictures.find((e) => e === photo);
-    let index = pictures.indexOf(filteredPicture) - 1;
-    let slicePictures = pictures.at(index);
-    setPhoto(slicePictures);
-  };
-  const handleNext = () => {
-    let filteredPicture = pictures.find((e) => e === photo);
-    let index = pictures.indexOf(filteredPicture) + 1;
-    if (index === pictures.length) {
-      let slicePictures = pictures.at(0);
-      setPhoto(slicePictures);
-    } else {
-      let slicePictures = pictures.at(index);
-      setPhoto(slicePictures);
-    }
-  };
   return (
     <div>
       <Navbar />
@@ -273,134 +221,14 @@ function Origin2() {
         <img src={timeline} alt="timeline" />
       </div>
 
-      <div className={style.prueba}>
-
-   
-      <div className={style.galleryContain}>
-        <div className={style.gallery}>
-          <div className={style.gridTwoPhotos}>
-            <img
-              onClick={() => handlePhoto(img1)}
-              className={style.img1}
-              src={img1}
-              alt=""
-            />
-            <img
-              onClick={() => handlePhoto(img2)}
-              className={style.img1}
-              src={img2}
-              alt=""
-            />
+      <div className={style.carouselWrapperBuildings}>
+        <div className={style.carouselContainerBuildings}>
+          <div className={style.carouselBuildings}>
+            <div className={style.imageOne}></div>
+            <div className={style.imageTwo}></div>
           </div>
-             <div className={style.gridTwoPhotos2}>
-
-          <img
-            onClick={() => handlePhoto(img3)}
-            className={style.img2}
-            src={img3}
-            alt=""
-          />
-          <img
-            onClick={() => handlePhoto(img4)}
-            className={style.img2}
-            src={img4}
-            alt=""
-          />
-            </div>
-          <div className={style.gridTwoPhotos2}>
-            <img
-              onClick={() => handlePhoto(img5)}
-              className={style.img3}
-              src={img5}
-              alt=""
-            />
-            <img
-              onClick={() => handlePhoto(img6)}
-              className={style.img4}
-              src={img6}
-              alt=""
-            />
-          </div>
-          <div className={style.gridRowTwoPhotos}>
-           
-              <img
-                onClick={() => handlePhoto(img7)}
-                className={style.img5}
-                src={img7}
-                alt=""
-              />
-              {/* <img
-                onClick={() => handlePhoto(img8)}
-                className={style.img6}
-                src={img8}
-                alt=""
-              /> */}
-     
-            <img
-              onClick={() => handlePhoto(img8)}
-              className={style.img7}
-              src={img8}
-              alt=""
-            />
-          </div>
-
         </div>
       </div>
-      </div>
-      <div>
-        <div
-          className={
-            photo !== null ? style.backgroundOpen : style.backgroundClose
-          }
-        ></div>
-        {x === true ? (
-          isExpanded === true ? (
-            <p className={style.expand} onClick={() => handleExpand()}>
-              <BsArrowsAngleContract size={30} color="#000000ad" />
-            </p>
-          ) : (
-            <p className={style.expand} onClick={() => handleExpand()}>
-              <BsArrowsAngleExpand size={30} color="#000000ad" />
-            </p>
-          )
-        ) : (
-          <div></div>
-        )}
-        {x === true ? (
-          <p className={style.x} onClick={() => handleClose()}>
-            <TfiClose size={35} />
-          </p>
-        ) : (
-          <div></div>
-        )}
-        {photo !== null ? (
-          <div className={style.gridFullScreen}>
-            <p onClick={() => handlePrev(photo)} className={style.prevBtn}>
-              <SlArrowLeft size={40} color="#000000ad" />
-            </p>
-            <img
-              className={
-                isExpanded === false
-                  ? style.currentImg
-                  : style.currentImgExpanded
-              }
-              src={photo}
-              alt=""
-            />
-            <p
-              onClick={() => handleNext(photo)}
-              className={
-                isExpanded === true ? style.nextBtnExpand : style.nextBtn
-              }
-            >
-              <SlArrowRight size={40} color="#000000ad" />
-            </p>
-          </div>
-        ) : (
-          <div></div>
-        )}
-      </div>
-
       <ContactUs />
       <Footer />
     </div>

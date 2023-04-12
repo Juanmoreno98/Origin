@@ -22,7 +22,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 15% 35% 50%;
+  grid-template-columns: 15% 30% 55%;
   width: 100%;
   height: 51%;
   background: #141e30; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
@@ -65,7 +65,7 @@
   justify-self: start;
 }
 .titulo {
-  font-size: 40px;
+  font-size: 35px;
   color: var(--titulo);
   font-family: var(--headlinesFont);
   align-self: center;
