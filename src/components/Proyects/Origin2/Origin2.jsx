@@ -1,39 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
+import img1Slider from "../../../img/OriginII/Acabados/Origin2_A1.jpg";
+import img2Slider from "../../../img/OriginII/Acabados/Origin2_A2.jpg";
+import img3Slider from "../../../img/OriginII/Acabados/Origin2_A3.jpg";
+import img4Slider from "../../../img/OriginII/Acabados/Origin2_A4.jpg";
+import img5Slider from "../../../img/OriginII/Acabados/Origin2_A5.jpg";
+import img6Slider from "../../../img/OriginII/Acabados/Origin2_A6.jpg";
+import img7Slider from "../../../img/OriginII/Acabados/Origin2_A7.jpg";
+import img8Slider from "../../../img/OriginII/Acabados/Origin2_A8.jpg";
+import infoTable from "../../../img/info_table.png";
 import ContactUs from "../../ContactUs/ContactUs.tsx";
 import Footer from "../../Footer/Footer.tsx";
 import Navbar from "../../Navbar/Navbar";
-import p from "../../icons/p.png";
-import trash from "../../icons/trash.png";
-import terraza from "../../icons/terraza.png";
-import people from "../../icons/people.png";
-import style from "./style.module.css";
-import car from "../../icons/car.png";
-import reception from "../../icons/reception.png";
 import timeline from "../../assets/timeline.png";
-import img1 from "../../../img/OriginII/stage_1.jpg";
-import img2 from "../../../img/OriginII/stage_2.jpg";
-import img3 from "../../../img/OriginII/stage_3.jpg";
-import img4 from "../../../img/OriginII/stage_4.jpg";
-import img5 from "../../../img/OriginII/stage_5.jpg";
-import img6 from "../../../img/OriginII/stage_6.jpg";
-import img7 from "../../../img/OriginII/stage_7.jpg";
-import img8 from "../../../img/OriginII/stage_8.jpg";
-import img9 from "../../../img/Apto_Tipo3.JPG";
-import img10 from "../../../img/Apto_Tipo4.JPG";
-import { BsArrowsAngleExpand } from "react-icons/bs";
-import { BsArrowsAngleContract } from "react-icons/bs";
-import { TfiClose } from "react-icons/tfi";
-import { SlArrowRight } from "react-icons/sl";
-import { SlArrowLeft } from "react-icons/sl";
-import img1Slider from "../../../img/Origin2_A1.jpg";
-import img2Slider from "../../../img/Origin2_A2.jpg";
-import img3Slider from "../../../img/Origin2_A3.jpg";
-import img4Slider from "../../../img/Origin2_A4.jpg";
-import img5Slider from "../../../img/Origin2_A5.jpg";
-import img6Slider from "../../../img/Origin2_A6.jpg";
-import img7Slider from "../../../img/Origin2_A7.jpg";
-import img8Slider from "../../../img/Origin2_A8.jpg";
-import infoTable from "../../../img/info_table.png";
+import car from "../../icons/car.png";
+import p from "../../icons/p.png";
+import people from "../../icons/people.png";
+import reception from "../../icons/reception.png";
+import terraza from "../../icons/terraza.png";
+import trash from "../../icons/trash.png";
+import style from "./style.module.css";
+import bbq from "../../icons/bbq.png";
 
 function Origin2() {
   return (
@@ -208,7 +194,7 @@ function Origin2() {
           </div>
 
           <div className={style.itemIcon}>
-            <img className={style.icon} src={people} alt="" />
+            <img className={style.iconBbq} src={bbq} alt="" />
             <div className={style.iconsText}>ZONA BBQ </div>
           </div>
 
