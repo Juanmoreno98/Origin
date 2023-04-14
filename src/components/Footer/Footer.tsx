@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import logo from "../assets/LOGOCOLOR.png";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import {BsFacebook} from 'react-icons/bs'
+import {SiMaildotru} from 'react-icons/si'
+
+
 import "./Footer.css";
 import prueba from "../assets/imagen8.png";
 
@@ -23,18 +25,18 @@ function Footer() {
           <div className="followUsContactContainer">
             <div className="originsBlock">
               <div className="followUsInfoLabelOriginTitle">Origin 1 </div>
-              <div className="followUsInfoLabelOrigin"> calle 137 #55 - 32</div>
+              <div className="followUsInfoLabelOrigin"> Carrera 32 #1d - 33</div>
               <div className="followUsInfoLabelOrigin"> Bogotá - Colombia</div>
             </div>
 
             <div className="originsBlock">
-              <div className="followUsInfoLabelOriginTitle">Origin 1 </div>
-              <div className="followUsInfoLabelOrigin"> calle 137 #55 - 32</div>
+              <div className="followUsInfoLabelOriginTitle">Origin 2 </div>
+              <div className="followUsInfoLabelOrigin"> Calle 5 #30 - 45</div>
               <div className="followUsInfoLabelOrigin"> Bogotá - Colombia</div>
             </div>
             <div className="originsBlock">
-              <div className="followUsInfoLabelOriginTitle">Origin 1 </div>
-              <div className="followUsInfoLabelOrigin"> calle 137 #55 - 32</div>
+              <div className="followUsInfoLabelOriginTitle">Origin 3</div>
+              <div className="followUsInfoLabelOrigin"> Calle 137 #55 - 32</div>
               <div className="followUsInfoLabelOrigin"> Bogotá - Colombia</div>
             </div>
           </div>
@@ -42,33 +44,27 @@ function Footer() {
         <hr className="hrVertical"></hr>
 
         <div className="ContactNavigateFooter">
-          <h4 className="ContactUs">Contactanos</h4>
-          <div>
+          <h4 className="ContactUs">Contáctenos</h4>
+          <div className="correo">
+                <div className="titleCorreo">Correo:</div>
+                <div>originholdings@gmail.com</div>
+              </div>
+          <div className="contactIconsFooter">
 
             <a
               className="iconsFooter"
               href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
             >
-              <AlternateEmailIcon className="footeremailIcon" />
+              <SiMaildotru size={40}  />
             </a>
             <a
               className="iconsFooter"
               href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
             >
-              <InstagramIcon className="footeremailIcon" />
-            </a>
-            <a
-              className="iconsFooter"
-              href="mailto:valverdetomas98@gmail.com?Subject=Contact%20me!"
-            >
-              <TwitterIcon className="footeremailIcon" />
-          
+              <BsFacebook size={40} />
             </a>
           </div>
-          <div className="correo">
-                <div className="titleCorreo">Correo:</div>
-                <div>originholdings@gmail.com</div>
-              </div>
+      
        
         </div>
       </footer>
