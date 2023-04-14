@@ -9,20 +9,28 @@
   --headlinesFont:'Maiandra GD', sans-serif;
   --footer: #2f3640;
 }
-
+@font-face {
+  font-family: metroBold;
+  src: url("../../../src/fonts/Metropolis-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: metroLight;
+  src: url("../../../src/fonts/metropolis.thin.otf") format("opentype");
+}
 * {
+  --metropolisBold: metroBold;
+  --metropolisLight: metroLight;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: var(--headlinesFont);
 }
 
 /* ------------------------ HEADER--------------------------- */
 
 .header {
   display: grid;
-  grid-template-columns: 15% 30% 55%;
+  grid-template-columns: 17% 28% 55%;
   width: 100%;
   height: 51%;
   background: #141e30; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
@@ -59,16 +67,18 @@
 
 /* ------------------------Navegacion------------------------ */
 .logoNavbar {
-  width: 15rem;
+  width: 17rem;
   height: 10rem;
   align-self: center;
-  justify-self: start;
+  justify-self: flex-end;
+
 }
 .titulo {
-  font-size: 35px;
+  font-size: 2.5rem;
   color: var(--titulo);
-  font-family: var(--headlinesFont);
+  font-family: var(--metropolisBold);
   align-self: center;
+  width: 35rem;
 }
 /* ---------------------------------TEXTOS--------------------------------- */
 

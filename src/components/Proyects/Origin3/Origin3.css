@@ -606,13 +606,7 @@
 }
 
 /* -------------------------------------------------------------------------------------------> */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans";
-  /* border: solid black 1px; */
-}
+
 
 .content-wrapper {
   margin: 0 auto;
