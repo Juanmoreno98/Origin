@@ -798,14 +798,29 @@ dd
 }
 
 .barra3 {
-  margin-top: 6rem;
-  margin-left: 3.5vw;
-  height: 113vh;
-  width: 41vw;
+  margin-top: 6.2rem;
+  margin-left: 4.6vw;
+  height: 94vh;
+  width: 39vw;
   position: absolute;
   background-color: #ffb200;
   border-radius: 2rem;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.897);
+  margin-bottom: none;
+}
+
+@media (max-width: 1420px) {
+  .barra3 {
+    margin-top: 6rem;
+    margin-left: 3.5vw;
+    height: 120vh;
+    width: 41vw;
+    position: absolute;
+    background-color: #ffb200;
+    border-radius: 2rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.897);
+    margin-bottom: none;
+  }
 }
 
 @media (max-width: 1360px) {
@@ -819,6 +834,7 @@ dd
     height: 125vh;
     margin-left: 3vw;
     width: 42vw;
+    height: 110vh;
   }
 
   .container {
