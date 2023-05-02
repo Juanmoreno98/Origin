@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import logo from "../assets/LOGOCOLOR.png";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import {BsFacebook} from 'react-icons/bs'
-import {AiOutlineMail} from 'react-icons/ai'
-
+import { BsFacebook } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 
 import "./Footer.css";
 import prueba from "../assets/imagen8.png";
@@ -25,7 +24,10 @@ function Footer() {
           <div className="followUsContactContainer">
             <div className="originsBlock">
               <div className="followUsInfoLabelOriginTitle">Origin 1 </div>
-              <div className="followUsInfoLabelOrigin"> Carrera 32 #1D - 33</div>
+              <div className="followUsInfoLabelOrigin">
+                {" "}
+                Carrera 32 #1D - 33
+              </div>
               <div className="followUsInfoLabelOrigin"> Bogotá - Colombia</div>
             </div>
 
@@ -36,7 +38,10 @@ function Footer() {
             </div>
             <div className="originsBlock">
               <div className="followUsInfoLabelOriginTitle">Origin 3</div>
-              <div className="followUsInfoLabelOrigin"> Carrera 77A #83-31  Carrera 77A #83-39  </div>
+              <div className="followUsInfoLabelOrigin">
+                {" "}
+                Carrera 77A #83-31 <br /> Carrera 77A #83-39{" "}
+              </div>
               <div className="followUsInfoLabelOrigin"> Bogotá - Colombia</div>
             </div>
           </div>
@@ -46,16 +51,17 @@ function Footer() {
         <div className="ContactNavigateFooter">
           <h4 className="ContactUs">Contáctenos</h4>
           <div className="correo">
-                <div className="titleCorreo">Correo:</div>
-                <div className="direccionCorreo">origin_holdings_sas@hotmail.com</div>
-              </div>
+            <div className="titleCorreo">Correo:</div>
+            <div className="direccionCorreo">
+              origin_holdings_sas@hotmail.com
+            </div>
+          </div>
           <div className="contactIconsFooter">
-
             <a
               className="iconsFooter"
               href="mailto:origin_holdings_sas@hotmail.com?Subject=Contact%20me!"
             >
-              <AiOutlineMail size={40}  />
+              <AiOutlineMail size={40} />
             </a>
             <a
               className="iconsFooter"
@@ -64,8 +70,6 @@ function Footer() {
               <BsFacebook size={40} />
             </a>
           </div>
-      
-       
         </div>
       </footer>
       <div className="copyrigth">

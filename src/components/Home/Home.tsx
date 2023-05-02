@@ -139,9 +139,10 @@ function Home() {
       <div className="allProjects">
         <div className="imagesProjects">
           <hr />
-          <hr className="hrYellow" />
+          {/* <hr className="hrYellow" /> */}
           <img src={imgFachada} alt="" />
           <h1>ORIGIN I</h1>
+          <hr className="hrYellow" />
         </div>
         <div className="imagesProjects">
           <img src={imgHome} alt="" />
@@ -149,14 +150,14 @@ function Home() {
           <hr className="hrblue" />
         </div>
         <div className="imagesProjects">
-          <hr className="hrYellow" />
+          {/* <hr className="hrYellow" /> */}
           <div style={{ display: "flex", justifyContent: "center" }}>
             <img style={{ width: "80%" }} src={FachadaFinal} alt="" />
           </div>
-          <h1>
-            {" "}
+          <h1 style={{ marginTop: "-290px" }}>
             ORIGIN III <p>(En proceso)</p>
           </h1>
+          <hr className="hrYellow" style={{ marginTop: "1rem" }} />
         </div>
       </div>
 
