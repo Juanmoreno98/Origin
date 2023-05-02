@@ -202,6 +202,11 @@ function Origin2() {
             <img className={style.icon} src={trash} alt="" />
             <div className={style.iconsText}>SHUT DE BASURAS</div>
           </div>
+
+          <div className={style.itemIcon}>
+            <img className={style.icon} src={trash} alt="" />
+            <div className={style.iconsText}>BICICLETERA</div>
+          </div>
         </div>
       </div>
 
