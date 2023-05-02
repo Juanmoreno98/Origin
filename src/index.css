@@ -1,13 +1,10 @@
+@import url("https://fonts.cdnfonts.com/css/maiandra-gd");
 
-@import url('https://fonts.cdnfonts.com/css/maiandra-gd');
-
-
-body{
+body {
   margin: 0px;
-  font-family: 'Maiandra GD', sans-serif;
+  font-family: "Maiandra GD", sans-serif;
 }
 
-
-/* *{
+/* * {
   border: 1px solid black;
 } */
