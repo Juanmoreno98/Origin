@@ -95,7 +95,7 @@ function Navbar() {
       <CssBaseline />
           <img class="logoNavbar" src={logo} alt="logo" />
           <div class="titulo">ORIGIN HOLDINGS S.A.S</div>
-        <Box sx={{ alignSelf:'start', justifySelf: "end", fontFamily: "Segoe UI Symbol" }}>
+        <Box sx={{ alignSelf:'start', justifySelf: "end", fontFamily: "Segoe UI Symbol",mt:1 }}>
           <Button sx={{ color: "#fff" , ":hover":{
              color: "#FFB200"
           } }}  theme={theme} onClick={handleGoHome}>

@@ -37,7 +37,7 @@
 .iconsGrid2 {
   padding-top: 15vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
   align-items: center;
 }
